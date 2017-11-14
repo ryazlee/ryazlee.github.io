@@ -32,3 +32,26 @@ p.bluetext {
 #image {
     float right;
     margin left: 20px
+}
+
+#hellop{
+    color: orange;
+    font-size: 300%;
+}
+
+#link{
+    color: green;
+    font-family: courier;
+    font-size: 150%;
+   
+    link:link {
+        color: green;
+        background-color = transparant;
+        text-decoration: italicize;
+    }
+    link:hover {
+        color: purple;
+        background-color = transparant;
+        text-decoration: italicize;
+    }
+}
