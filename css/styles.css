@@ -8,8 +8,10 @@ title{
 
 #h01 {
     border: 4px solid orange;
+    margin-right: 300px;
+    margin-left: 300px;
     padding: 40px;
-    color: blue;
+    color: black;
     font-family: avenir;
     font-size: 160%;
     text-align: center;
