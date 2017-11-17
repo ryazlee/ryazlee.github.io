@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: white;
 }
 
 title{
@@ -54,7 +54,7 @@ p.bluetext {
 }
 
 #song{
-    font: courier;
+    font: arial;
     font-size: 14px;
-    background-color: yellow;
+    background-color: #9bffbb;
 }
