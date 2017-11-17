@@ -1,3 +1,3 @@
-[submodule "guessthatsongday"]
-	path = guessthatsongday
+[submodule "projects/guessthatsongday"]
+	path = projects/guessthatsongday
 	url = https://github.com/ryazlee/guessthatsongday
