@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: navy;
 }
 
 title{
@@ -7,13 +7,13 @@ title{
 }
 
 #h01 {
-    border: 4px solid orange;
-    margin-right: 300px;
-    margin-left: 300px;
-    padding: 40px;
+    border: 4px dashed blue;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 20px;
     color: black;
     font-family: avenir;
-    font-size: 160%;
+    font-size: 200%;
     text-align: center;
 }
 
@@ -45,16 +45,20 @@ p.bluetext {
     font-size: 300%;
 }
 
-#link{
-    color: green;
-    font-family: courier;
-    font-size: 300%;
-    text-decoration: none;
-    text-align: center;       
+#hellolink{
+    font-family: arial;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+#guessthatsongdaylink{
+    font-family: arial;
+    font-size: 150%;
+    text-decoration: bold;
 }
 
 #song{
     font: courier;
     font-size: 14px;
-    background-color: yellow;
+    background-color: powderblue;
 }
