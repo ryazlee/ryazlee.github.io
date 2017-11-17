@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class lyricFileCreator{
     public static void main (String[] args){
         String baseSite = "https://www.azlyrics.com/lyrics/#FILLIN#.html";
-        String input = "kendricklamar/humble";
+        String input = "khalid/location";
 
         String url = searchAndReplace("#FILLIN#", input, baseSite);
         System.out.println(url);        
