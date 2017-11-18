@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class lyricFileCreator{
     public static void main (String[] args){
         String baseSite = "https://www.azlyrics.com/lyrics/#FILLIN#.html";
-        String input = "taylorswift/teardropsonmyguitar";
+        String input = args[0] + "/" + args[1];
 
         String url = searchAndReplace("#FILLIN#", input, baseSite);
         System.out.println(url);        
@@ -39,7 +39,11 @@ public class lyricFileCreator{
             data = data.substring(data.indexOf("<!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that. -->")+133, data.indexOf("<!-- MxM banner -->") - 14);
             
             String songHTML = searchAndReplace("#FILLIN#", data, baseHTML);
-            
+        
+            System.out.println(songHTML.contains("["));
+             
+            songHTML = removeBracketText(songHTML);
+                   
             songHTML = updateLyrics(songHTML, eMapping);
              
             writeToFile("../lyrics/song1.html", songHTML);
@@ -86,5 +90,26 @@ public class lyricFileCreator{
             ret = searchAndReplace(searchparam, replaceparam, ret);
         }
         return ret;   
+    }
+
+    public static String removeBracketText(String text){
+        int startbracket;
+        int endbracket;
+        for (int i = 1; i < text.length()-1; i++){
+            startbracket = 0;
+            endbracket = 0;
+            if (text.charAt(i) == '['){
+                startbracket = i;
+                for (int j = i; j < text.length()-1; j++){
+                    if(text.charAt(j) == ']') endbracket = j + 1;
+                }
+                System.out.println(startbracket + "     " + endbracket); 
+                String searchparam = text.substring(startbracket-1, endbracket+1);
+            
+                text = searchAndReplace(searchparam, "", text);
+            }
+        }
+
+        return text;
     }
 }
