@@ -1,3 +1,2 @@
-alert("hello");
 var t = prompt("what's your name?");
-document.getElementById('h01').innerHTML = t;
+document.getElementById('para1').innerHTML = "Hello " + t + " my name is Ryan!";
