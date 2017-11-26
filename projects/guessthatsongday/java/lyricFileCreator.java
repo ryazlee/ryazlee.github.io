@@ -5,8 +5,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.applet.Applet;
+import java.awt.Graphics;
 
-public class lyricFileCreator{
+public class lyricFileCreator extends Applet{
     public static void main (String[] args){
         String baseSite = "https://www.azlyrics.com/lyrics/#FILLIN#.html";
         String input = args[0] + "/" + args[1];
@@ -48,6 +50,10 @@ public class lyricFileCreator{
              
             writeToFile("../lyrics/song1.html", songHTML);
 
+    }
+    
+    public void paint(Graphics g) {
+        g.drawString("hello", 50, 25);
     }
 
     public static void writeToFile(String filename, String content){
