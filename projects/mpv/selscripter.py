@@ -11,22 +11,27 @@ driver.get("https://auth.berkeley.edu/cas/login?service=https%3A%2F%2Fcalcentral
 
 #driver.get("https://calcentral.berkeley.edu/finances");
 
-assert "CAS" in driver.title
-elem = driver.find_element_by_id("username")
-elem.send_keys(user)
-elem = driver.find_element_by_id("password")
-elem.send_keys(pwd)
-elem.send_keys(Keys.RETURN)
+try:
+    assert "CAS" in driver.title
+    elem = driver.find_element_by_id("username")
+    elem.send_keys(user)
+    elem = driver.find_element_by_id("password")
+    elem.send_keys(pwd)
+    elem.send_keys(Keys.RETURN)
+         
+    driver.implicitly_wait(2)
 
-driver.implicitly_wait(2)
+    driver.find_element_by_xpath('//*[@id="cc-navigation"]/div/div/ul/li[3]')
 
-driver.find_element_by_xpath('//*[@id="cc-navigation"]/div/div/ul/li[3]')
+    html = driver.execute_script("return document.body;");
+    data = driver.page_source;
 
-html = driver.execute_script("return document.body;");
-data = driver.page_source;
+    start = data.find("mealpoints | number") + 21;
+    end = data.find("cc-cal1card-points") - 21;
 
-start = data.find("mealpoints | number") + 21;
-end = data.find("cc-cal1card-points") - 21;
+    print("You have " + data[start:end] + " meal points");
 
-print("You have " + data[start:end] + " meal points");
+except:
+    print("Something went wrong with login, please try again");
+
 driver.close()
