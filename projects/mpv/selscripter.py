@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import getpass
 
-
 user = input("Please enter your CalNet id: ");
 pwd = getpass.getpass("Please enter your CalNet password: ");
 
@@ -19,7 +18,7 @@ try:
     elem.send_keys(pwd)
     elem.send_keys(Keys.RETURN)
          
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(3)
 
     driver.find_element_by_xpath('//*[@id="cc-navigation"]/div/div/ul/li[3]')
 
