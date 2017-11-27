@@ -28,9 +28,12 @@ try:
     start = data.find("mealpoints | number") + 21;
     end = data.find("cc-cal1card-points") - 21;
 
+    #print(data);
+    #print(str(start) + "    "  + str(end));
     print("You have " + data[start:end] + " meal points");
 
 except:
     print("Something went wrong with login, please try again");
 
 driver.close()
+
