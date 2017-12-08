@@ -6,6 +6,8 @@ user = input("Please enter your CalNet id: ");
 pwd = getpass.getpass("Please enter your CalNet password: ");
 
 driver = webdriver.Chrome(executable_path=r"chromedriver")
+#driver = webdriver.Firefox(executable_path=r"chromedriver")
+
 
 driver.get("https://auth.berkeley.edu/cas/login?service=https%3A%2F%2Fcalcentral.berkeley.edu%2Fauth%2Fcas%2Fcallback%3Furl%3Dhttps%253A%252F%252Fcalcentral.berkeley.edu%252F/finances")
 
