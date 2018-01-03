@@ -45,9 +45,19 @@ p.bluetext {
     font-size: 300%;
 }
 
-#hellolink{
+#resumelink{
     background-color: #f44336;
-    color: #A631CC
+    color: #A631CC;
+    font-family: arial;
+    text-align: left;
+    padding: 14px 25px;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+#guessthatsongdaylink{
+    background-color: #f44336;
+    color: #A631CC;
     font-family: arial;
     padding: 14px 25px;
     text-align: center;
@@ -55,15 +65,17 @@ p.bluetext {
     text-decoration: none;
 }
 
-#guessthatsongdaylink{
+#wtslink{
     background-color: #f44336;
-    color: #A631CC
+    color: #A631CC;
     font-family: arial;
     padding: 14px 25px;
     text-align: center;
     font-size: 150%;
     text-decoration: none;
 }
+
+
 
 #song{
     font: courier;
