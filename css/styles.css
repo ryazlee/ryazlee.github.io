@@ -46,15 +46,23 @@ p.bluetext {
 }
 
 #hellolink{
+    background-color: #f44336;
+    color: #A631CC
     font-family: arial;
+    padding: 14px 25px;
+    text-align: center;
     font-size: 150%;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #guessthatsongdaylink{
+    background-color: #f44336;
+    color: #A631CC
     font-family: arial;
+    padding: 14px 25px;
+    text-align: center;
     font-size: 150%;
-    text-decoration: bold;
+    text-decoration: none;
 }
 
 #song{
@@ -62,3 +70,4 @@ p.bluetext {
     font-size: 14px;
     background-color: powderblue;
 }
+
