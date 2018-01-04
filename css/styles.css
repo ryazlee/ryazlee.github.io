@@ -2,11 +2,17 @@ title{
     color: orange;
 }
 
-#h01 {
-    padding: 20px;
+#h01a {
     color: black;
     font-family: avenir;
-    font-size: 120%;
+    font-size: 200%;
+    text-align: center;
+}
+
+#h01b {
+    color: black;
+    font-family: avenir;
+    font-size: 140%;
     text-align: center;
 }
 
@@ -89,6 +95,13 @@ p.bluetext {
     text-decoration: None;
 }
 
+#facebooklink{
+    display:inline;
+    color: white;
+    font-family: avenir;
+    font-size: 150%;
+    text-decoration: None;
+}
 #song{
     font: courier;
     font-size: 14px;
