@@ -77,6 +77,17 @@ p.bluetext {
     text-decoration: none;
 }
 
+#rrgoptimizerlink{
+    border: 3px solid #f44336;
+    border-radius: 30px;
+    color: black;
+    font-family: avenir;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 150%;
+    text-decoration: none;
+}
+
 #wtslink{
     border: 3px solid #f44336;
     border-radius: 30px;
@@ -155,6 +166,11 @@ div span{
 }
 
 #wtslink:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+#rrgoptimizerlink:hover {
     background-color: #f44336;
     color: white;
 }
