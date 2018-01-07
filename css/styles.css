@@ -2,68 +2,18 @@ title{
     color: orange;
 }
 
-#h01a {
+.titletext {
     color: black;
     font-family: avenir;
-    font-size: 200%;
+    font-size: 250%;
     text-align: center;
 }
 
-#h01b {
-    color: black;
-    font-family: avenir;
-    font-size: 140%;
-    text-align: center;
-}
-
-#h02a {
-    color: black;
-    font-family: avenir;
-    font-size: 180%;
-    text-align: center;
-}
-
-#h02b {
+.basictext {
     color: black;
     font-family: avenir;
     font-size: 160%;
     text-align: center;
-}
-
-#p01 {
-    color: red;
-    font-family: courier;
-    font-size: 200%;
-    text-align: center;
-}
-
-p.bluetext {
-    color: blue;
-}
-
-#video {
-    align: left;
-    margin right: 100px;
-    
-}
-
-#image {
-    align right;
-    margin left: 20px;
-}
-
-#hellop{
-    color: orange;
-    font-family: Palatino;
-    font-size: 300%;
-}
-
-#resumelink{
-    display:inline;
-    color: white;
-    font-family: avenir;
-    font-size: 150%;
-    text-decoration: None;
 }
 
 .projectlink{
@@ -85,42 +35,12 @@ p.bluetext {
     color: white;
 }
 
-
-#contactlink{
-    display:inline;
+.contactlink{
+    display: inline-block;
     color: white;
     font-family: avenir;
-    font-size: 150%;
+    font-size: 160%;
     text-decoration: None;
-}
-
-#githublink{
-    display:inline;
-    color: white;
-    font-family: avenir;
-    font-size: 150%; 
-    text-decoration: None;
-}
-
-#linkedinlink{
-    display:inline;
-    color: white;
-    font-family: avenir;
-    font-size: 150%;
-    text-decoration: None;
-}
-
-#facebooklink{
-    display:inline;
-    color: white;
-    font-family: avenir;
-    font-size: 150%;
-    text-decoration: None;
-}
-#song{
-    font: courier;
-    font-size: 14px;
-    background-color: powderblue;
 }
 
 html {
@@ -144,20 +64,4 @@ div span{
     background: #f44336;
 }
 
-.box{
-    display: none;
-    width: 100%;
-}
-
-a:hover + .box,.box:hover{
-    display: block;
-    position: relative;
-    z-index: 100;
-}
-
-.grad {
-    background: linear-gradient(#648880, #293f50);
-    border-radius: 6px;
-    height: 120px;
-}
 
