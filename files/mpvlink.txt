@@ -1,5 +1,0 @@
-Sorry, but I plan to monetize this service and do not want to share this code withe the public.  
-
-This code successfully automates the log in for the UC Berkeley Student Login page in order to view meal points to give the students a more visual representation on the meal point status.  If you want to see this code, please contact me at ryanjlee@berkeley.edu.
-
-Thank you for your time.
