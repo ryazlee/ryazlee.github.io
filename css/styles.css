@@ -43,6 +43,19 @@ title{
     text-decoration: None;
 }
 
+.contactlink:hover{
+    font-size: 190%; 
+}
+
+.footertext{
+    display: inline-block;
+    color: white;
+    font-family: avenir;
+    font-size: 160%; 
+    text-decoration: None;
+}
+
+
 html {
     height: 100%;
     background-repeat: no-repeat;
