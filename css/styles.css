@@ -2,9 +2,14 @@ title{
     color: orange;
 }
 
+@font-face {
+font-family: DeliciousRoman;
+src: url(/Delicious-Roman.otf);
+}
+
 .titletext {
     color: black;
-    font-family: avenir;
+    font-family: DeliciousRoman;
     font-size: 250%;
     text-align: center;
 }
