@@ -2,14 +2,9 @@ title{
     color: orange;
 }
 
-@font-face {
-font-family: DeliciousRoman;
-src: url(/Delicious-Roman.otf);
-}
-
 .titletext {
     color: black;
-    font-family: DeliciousRoman;
+    font-family: Lato;
     font-size: 250%;
     text-align: center;
 }
@@ -25,7 +20,7 @@ src: url(/Delicious-Roman.otf);
     white-space: nowrap;
     width: 200%; 
     line-height: 225%;
-    border: 3px solid #f44336;
+    border: 3px solid #99E1D9;
     border-radius: 30px;
     color: black;
     font-family: avenir;
@@ -36,13 +31,13 @@ src: url(/Delicious-Roman.otf);
 }
 
 .projectlink:hover {
-    background-color: #f44336;
+    background-color: #99E1D9;
     color: white;
 }
 
 .contactlink{
     display: inline-block;
-    color: white;
+    color: #99E1D9;
     font-family: avenir;
     font-size: 160%;
     text-decoration: None;
@@ -61,16 +56,18 @@ src: url(/Delicious-Roman.otf);
 }
 
 
-html {
+html{
+    background-attachment: fixed
     height: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-bottom: 4000px;
+    padding-bottom:0px;
+    background-size: cover;
 }
 
 #footer{
     display: inline-block;
-    position: fixed;
+    background: #FFFAE3;
+    /*position: fixed;*/
     font-size: 1.5vw;
     bottom: 0%;
     width: 100%;
@@ -78,8 +75,12 @@ html {
 }
 
 div span{
-    padding: 10px;
-    background: #f44336;
+    text-align: center;
+    padding-top: 17%;
+    padding-left: 0.7%;
+    padding-right: 0.7%;
+    padding-bottom: 0px;
+    background: #FFFAE3;
 }
 
 
