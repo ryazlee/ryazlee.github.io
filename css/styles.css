@@ -66,7 +66,7 @@ html{
 
 #footer{
     display: inline-block;
-    background: #FFFAE3;
+    /*background: #FFFAE3;*/
     /*position: fixed;*/
     font-size: 1.5vw;
     bottom: 0%;
@@ -80,7 +80,7 @@ div span{
     padding-left: 0.7%;
     padding-right: 0.7%;
     padding-bottom: 0px;
-    background: #FFFAE3;
+    /*background: #FFFAE3;*/
 }
 
 
