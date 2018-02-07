@@ -90,7 +90,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #5D576B;
+    /*background-color: #5D576B;*/
 }
 
 li {
@@ -98,8 +98,9 @@ li {
 }
 
 li a {
-    display: block;
-    color: white;
+    font-size: 120%;
+    display: inline-block;
+    color: #5D576B;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -107,7 +108,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    /*background-color: #111;*/
 }
 
 .rotate90 {
