@@ -2,11 +2,6 @@ title{
     color: orange;
 }
 
-@font-face{
-    font-family: "Comfortaa Regular"
-    src: url("css/fonts/Comfortaa-Regular.tff");
-}
-
 .titletext {
     color: #99E1D9;
     font-family:'Comfortaa', cursive;
@@ -16,7 +11,7 @@ title{
 
 .basictext {
     color: black;
-    font-family: avenir;
+    font-family: 'Avenir Light';
     font-size: 160%;
     text-align: center;
 }
@@ -28,7 +23,7 @@ title{
     border: 3px solid #99E1D9;
     border-radius: 30px;
     color: black;
-    font-family: avenir;
+    font-family: 'Avenir Light';
     padding: 4px 10px;
     text-align: center;
     font-size: 150%; 
@@ -43,7 +38,7 @@ title{
 .contactlink{
     display: inline-block;
     color: #99E1D9;
-    font-family: avenir;
+    font-family: 'Avenir Light';
     font-size: 160%;
     text-decoration: None;
 }
@@ -55,7 +50,7 @@ title{
 .footertext{
     display: inline-block;
     color: white;
-    font-family: avenir;
+    font-family: 'Avenir Light';
     font-size: 160%; 
     text-decoration: None;
 }
@@ -110,7 +105,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: avenir;
+    font-family: 'Avenir Light';
 }
 
 li a:hover {
