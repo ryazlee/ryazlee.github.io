@@ -2,9 +2,14 @@ title{
     color: orange;
 }
 
+@font-face{
+    font-family: "Comfortaa Regular"
+    src: url("css/fonts/Comfortaa-Regular.tff");
+}
+
 .titletext {
     color: #99E1D9;
-    font-family: palatino;
+    font-family:'Comfortaa', cursive;
     font-size: 250%;
     text-align: center;
 }
