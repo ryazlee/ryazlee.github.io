@@ -86,14 +86,15 @@ div span{
 
 /* Menu Bar */
 ul {
+    display:inline-table;
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     /*background-color: #5D576B;*/
 }
 
 li {
+    display: inline;
     float: left;
 }
 
