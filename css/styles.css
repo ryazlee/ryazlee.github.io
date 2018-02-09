@@ -1,17 +1,14 @@
-title{
-    color: orange;
-}
-
 .titletext {
     color: #99E1D9;
-    font-family:'Quicksand';
-    font-size: 250%;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 300%;
     text-align: center;
 }
 
 .basictext {
     color: black;
-    font-family: 'Avenir Light';
+    font-family: 'Assistant';
     font-size: 160%;
     text-align: center;
 }
@@ -23,8 +20,8 @@ title{
     border: 3px solid #99E1D9;
     border-radius: 30px;
     color: black;
-    font-family: 'Avenir Light';
-    padding: 4px 10px;
+    font-family: 'Assistant';
+    padding: 5px 15px;
     text-align: center;
     font-size: 150%; 
     text-decoration: none;
@@ -38,7 +35,7 @@ title{
 .contactlink{
     display: inline-block;
     color: #99E1D9;
-    font-family: 'Avenir Light';
+    font-family: 'Assistant';
     font-size: 160%;
     text-decoration: None;
 }
@@ -50,7 +47,7 @@ title{
 .footertext{
     display: inline-block;
     color: white;
-    font-family: 'Avenir Light';
+    font-family: 'Assistant';
     font-size: 160%; 
     text-decoration: None;
 }
@@ -105,7 +102,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Avenir Light';
+    font-family: 'Quicksand';
 }
 
 li a:hover {
