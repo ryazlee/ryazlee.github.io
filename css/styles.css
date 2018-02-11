@@ -106,7 +106,8 @@ li a {
 }
 
 li a:hover {
-    /*background-color: #111;*/
+    color: #99E1D9;
+    /* background-color: #FFFFFF; */
 }
 
 .rotate90 {
