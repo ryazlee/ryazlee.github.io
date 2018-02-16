@@ -91,6 +91,7 @@ ul {
 }
 
 li {
+    font-size: 2vh;
     display: inline;
     float: left;
 }
