@@ -85,11 +85,12 @@ div span{
 
 /* Menu Bar */
 ul {
+    line-height: 130%;    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 80%;
     padding: 0% 9%;
-    overflow: hidden;
 }
 
 li {
