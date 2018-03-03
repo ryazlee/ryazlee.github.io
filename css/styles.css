@@ -16,14 +16,14 @@
 .projectlink{
     white-space: nowrap;
     width: 200%; 
-    line-height: 225%;
+    line-height: 250%;
     border: 3px solid #99E1D9;
-    border-radius: 30px;
+    border-radius: 70px;
     color: black;
     font-family: 'Assistant';
-    padding: 5px 15px;
+    padding: 7px 1.5%;
     text-align: center;
-    font-size: 150%; 
+    font-size: 120%; 
     text-decoration: none;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .contactlink:hover{
-    font-size: 190%; 
+    color:#FFFAE3; 
 }
 
 .footertext{
@@ -62,12 +62,14 @@ html{
 }
 
 #footer{
+    width: 80%;
+    padding-left: 10%;
     display: inline-block;
     /*background: #FFFAE3;*/
     /*position: fixed;*/
-    font-size: 1.5vw;
+    padding-top: 10%;
+    font-size: 15px;
     bottom: 0%;
-    width: 100%;
     text-align: center;
 }
 
@@ -83,22 +85,21 @@ div span{
 
 /* Menu Bar */
 ul {
-    display:inline-table;
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 0% 9%;
     overflow: hidden;
-    /*background-color: #5D576B;*/
 }
 
 li {
     font-size: 2vh;
     display: inline;
-    float: left;
 }
 
 li a {
     font-size: 120%;
-    display: inline-block;
+    display: inline;
     color: #5D576B;
     text-align: center;
     padding: 14px 16px;
