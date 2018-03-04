@@ -67,9 +67,9 @@ html{
     display: inline-block;
     /*background: #FFFAE3;*/
     /*position: fixed;*/
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 15px;
-    bottom: 0%;
+    padding-bottom: 5%;
     text-align: center;
 }
 
