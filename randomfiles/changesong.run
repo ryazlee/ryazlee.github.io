@@ -1,0 +1,7 @@
+cd ~/Documents/projects/guessthatsongday/java/
+java lyricFileCreator rihanna loveonthebrain
+cd ..
+git add .
+git commit -m "changed song"
+git push
+cd
