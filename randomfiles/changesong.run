@@ -1,5 +1,5 @@
 cd ~/Documents/projects/guessthatsongday/java/
-java lyricFileCreator usher confessionspartii
+java lyricFileCreator 5secondsofsummer amnesia
 cd ..
 git add .
 git commit -m "changed song"
