@@ -3,19 +3,28 @@
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
     font-size: 300%;
+    padding-bottom: 5%;
 }
 
 .connectlinks{
-    color: #545454;
-    font-family: 'IBM Plex Sans', sans-serif;
-    width: 49%;
     float: left;
-    font-size: 200%;
+    width: 49%;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.connectlinks .text{
-    text-align: center;
+.connectlinks .textheader{
     color: #545454;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 150%;
+    padding-bottom: 3%;
+}
+
+.connectlinks .textcontainer{
+}
+
+.connectlinks .textcontainer .text{
+    text-align: center;
+    display: inline;
+    color: #545454;
     font-size: 100%;
 }
