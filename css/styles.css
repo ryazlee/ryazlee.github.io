@@ -8,7 +8,8 @@
 
 .connectlinks{
     float: left;
-    width: 49%;
+    clear: left;
+    width: 50%;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -27,4 +28,43 @@
     display: inline;
     color: #545454;
     font-size: 100%;
+}
+
+.connectlinks .imagecontainer{
+    padding: 5% 0;
+}
+
+.connectlinks .imagecontainer .a{
+    text-decoration: none;
+}
+
+.connectlinks .imagecontainer .image{
+    width: 10%;
+    padding: 0 2%;
+}
+
+/* Shadow behind images */
+.dropshadowclass {
+    margin-bottom: 2%;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999;
+    box-shadow: 5px 5px 0px #999;
+}
+
+.imagedropshadow {
+    padding: 5px;
+    border: solid 1px #EFEFEF;
+}
+
+a:hover img.imagedropshadow {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+
+/* General Modifications */
+a {
+    text-decoration: none;
 }
