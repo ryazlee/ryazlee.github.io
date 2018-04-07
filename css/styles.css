@@ -3,14 +3,14 @@
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
     font-size: 300%;
-    padding-bottom: 5%;
+    padding-bottom: 10vh;
 }
 
 .connectlinks{
+    margin-left: 7vh;
     float: left;
     clear: left;
-    width: 50%;
-    height: 50%;
+    width: 50vh;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -18,17 +18,18 @@
 .connectlinks .textheader{
     color: #545454;
     font-size: 4vh;
-    padding-bottom: 3%;
+    padding-bottom: 3vh;
 }
 
 .connectlinks .textcontainer{
+    padding-bottom: 5vh;
 }
 
 .connectlinks .textcontainer .text{
     text-align: center;
     display: inline;
     color: #545454;
-    font-size: 100%;
+    font-size: 3vh;
 }
 
 .connectlinks .imagecontainer{
@@ -40,22 +41,20 @@
 }
 
 .connectlinks .imagecontainer .image{
-    width: 10%;
-    padding: 0 2%;
+    width: 5vh;
+    padding: 0 1vh;
 }
 
 #ppimage{
-    width: 45vh;
-    margin-left: 10vh;
+    margin: 0 0 4vh 7vh;
+    width: 50vh;
     display: flex;
-    text-align: center;
     justify-content: center;
     float: left;
 }
 
 /* Shadow behind images */
 .dropshadowclass {
-    margin-bottom: 2%;
     border: solid 1px #CCC;
     -moz-box-shadow: 5px 5px 0px #999;
     -webkit-box-shadow: 5px 5px 0px #999;
@@ -74,7 +73,51 @@ a:hover img.imagedropshadow {
         box-shadow: 1px 1px 5px #999;
 }
 
+/* Scrollable Window */
+.scrollablewindow{
+    margin: 0 15vh 3vh 7vh;
+    float: right;
+    height: 72vh;
+    width: 55vw;
+    border:4px solid #ccc;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow:scroll;
+    word-wrap: break-word;
+}
+
+.scrollablewindow .category{
+    font-size: 7vh;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.scrollablewindow .content{
+    margin: 1vh 0 1vh 1vh;
+    font-size: 3vh;
+    text-align: left;
+}
+
+
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: yellowgreen;  
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #88ba1c;  
+}
+
 /* General Modifications */
 a {
     text-decoration: none;
+}
+
+a:visited{
+    color: blue;
 }
