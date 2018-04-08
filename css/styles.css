@@ -2,8 +2,13 @@
     color: #545454;
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
+<<<<<<< HEAD
     font-size: 200%;
     padding-bottom: 5%;
+=======
+    font-size: 300%;
+    padding-bottom: 10vh;
+>>>>>>> parent of c79b4be... major chnages, including vh aspect ration (i really hope this works for ios, havent tested it out yet.  also implemented the scrollable window.  has a shadow as well
 }
 
 .connectlinks{
