@@ -3,14 +3,13 @@
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
     font-size: 13vh;
-    padding-bottom: 10vh;
+    padding-bottom: 6vh;
 }
 
 .connectlinks{
-    margin-left: 7vh;
     float: left;
     clear: left;
-    width: 50vh;
+    width: 50%;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -18,11 +17,10 @@
 .connectlinks .textheader{
     color: #545454;
     font-size: 4vh;
-    padding-bottom: 3vh;
 }
 
 .connectlinks .textcontainer{
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
 }
 
 .connectlinks .textcontainer .text{
@@ -33,7 +31,8 @@
 }
 
 .connectlinks .imagecontainer{
-    padding: 5% 0;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .connectlinks .imagecontainer .a{
@@ -46,8 +45,8 @@
 }
 
 #ppimage{
-    margin: 0 0 4vh 7vh;
-    width: 50vh;
+    width: 40%;
+    margin-left: 5%;
     display: flex;
     justify-content: center;
     float: left;
@@ -75,10 +74,9 @@ a:hover img.imagedropshadow {
 
 /* Scrollable Window */
 .scrollablewindow{
-    margin: 0 15vh 3vh 7vh;
     float: right;
-    height: 72vh;
-    width: 55vw;
+    height: 60vh;
+    width: 48%;
     border:4px solid #ccc;
     font-family: 'IBM Plex Sans', sans-serif;
     overflow:scroll;
@@ -121,3 +119,36 @@ a {
 a:visited{
     color: blue;
 }
+
+/* Change text buttons */
+
+#example-four {
+  position: relative;
+}
+#example-four.on:after {
+  content: "Hide";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  text-decoration: underline;
+}
+
+#example-five {
+  position: relative;
+}
+#example-five-checkbox {
+  display: none;
+}
+#example-five-checkbox:checked + #example-five:after {
+  content: "Hidewhat";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+}
+
