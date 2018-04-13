@@ -98,8 +98,8 @@ a:hover img.imagedropshadow {
 }
 
 .scrollablewindow .group{
-    width: 95%;
-    font-size: 100%;
+    width: 100%;
+    font-size: 90%;
 }
 
 .scrollablewindow .group .content{
