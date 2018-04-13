@@ -104,6 +104,7 @@ a:hover img.imagedropshadow {
 
 .scrollablewindow .group .content{
     margin-left: 1vh;
+    margin-right: 1vh;
     margin-bottom: 1vw;
     font-size: 3vh;
     text-align: left;
