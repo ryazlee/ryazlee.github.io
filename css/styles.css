@@ -130,6 +130,27 @@ a {
     text-decoration: none;
 }
 
+.button {
+    border: 0;
+    color: black;
+    padding: 100px 0;
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    font-family: 'IBM Plex Sans', sans-serif; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: blue;
+}
+
 a:visited{
     color: blue;
 }

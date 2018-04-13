@@ -3,7 +3,7 @@
     <head>
         <title>Not Ryan Lee</title>
         <link rel = "stylesheet" href = "css\styles.css"> 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="js/myscript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Delius|IBM+Plex+Sans:100" rel="stylesheet">
         <div class = "titletext">ryan j. lee</div>
@@ -13,8 +13,11 @@
         <img id = "ppimage" class = "dropshadowclass" src = "pics/mesleeping.jpg"></div>
         
     <div class = "scrollablewindow dropshadowclass">
-            <div class = "title">Projects</div>
-            <div class = "group">
+            <div class = "title">
+                <button class = "button" onclick="showprojectsgroup()">Projects</button> 
+                <button class = "button" onclick="showcoursesgroup()">Courses</button>
+            </div>
+            <div id = "projectsgroup" class = "group">
                 <div class = "content"><a href="http://htmlpreview.github.io/?https://github.com/ryazlee/guessthatsongday/blob/master/song.html">#guessthatsongday!</a> > Generates songs with emojis replacing the lyrics!</div>
                 <div class = "content"><a href="https://github.com/ryazlee/GroupTaxCalculator">Group Payment Calculator</a> > iOS appliacation for splitting the bill (will be on Appstore soon)</div>
                  <div class = "content"><a href="https://htmlpreview.github.io/?https://github.com/ryazlee/uweb_website/master/index.html">UWEB site</a> > Developed Website for UC Berkeley UWEB</div>
@@ -23,8 +26,13 @@
                  <div class = "content"><a href="https://ryazlee.github.io/files/mpvlink.html">Web Automator</a> > Used to automate the log in for UC Berkeley's CalCentral</div>
             </div>
 
-         
+            <div id = "coursesgroup" style = "display:none;" class = "group">
+                <div class = "content"><a href="https://github.com/ryazlee/CS61A">CS61A: The Structure and Interpretation of Computer Programs</a> > UC Berkeley Spring 2018 with John DeNero</div>
+                <div class = "content"><a href="https://github.com/ryazlee/EE16A">EE16A: Designing Information Devices and Systems I</a> > UC Berkeley Spring 2018 with Laura Waller and Vladimir Stojanovic</div>
+            </div>
 
+ 
+        </div>
         </div>
             
 
