@@ -2,14 +2,15 @@
     color: #545454;
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
-    font-size: 13vh;
+    font-size: 100px;
     padding-bottom: 6vh;
 }
 
 .connectlinks{
+    margin-left: 5%;
     float: left;
     clear: left;
-    width: 50%;
+    width: 40%;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -41,12 +42,18 @@
 
 .connectlinks .imagecontainer .image{
     width: 5vh;
-    padding: 0 1vh;
+    padding: 1vh;
+}
+
+.connectlinks .imagecontainer .image:hover{
+    background: #CBAFE0;   
+    border-radius: 10px;
 }
 
 #ppimage{
     width: 40%;
     margin-left: 5%;
+    margin-bottom: 3vh;
     display: flex;
     justify-content: center;
     float: left;
@@ -76,6 +83,7 @@ a:hover img.imagedropshadow {
 .scrollablewindow{
     float: right;
     height: 60vh;
+    margin-right: 1%;
     width: 48%;
     border:4px solid #ccc;
     font-family: 'IBM Plex Sans', sans-serif;
