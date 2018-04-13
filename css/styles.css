@@ -90,6 +90,7 @@ a:hover img.imagedropshadow {
 }
 
 .scrollablewindow .content{
+    display: inline;
     margin: 1vh 0 1vh 1vh;
     font-size: 3vh;
     text-align: left;
@@ -118,6 +119,17 @@ a {
 
 a:visited{
     color: blue;
+}
+
+.projectlink{
+    white-space: nowrap;
+    border: 1px solid gray;
+    border-radius: 70px;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    font-size: 70%; 
+    text-decoration: none;
 }
 
 /* Change text buttons */
