@@ -134,9 +134,8 @@ a {
 .button {
     border: 0;
     color: black;
-    padding: 100px 0;
     background: transparent;
-    padding: 0;
+    padding: 0 5%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -154,6 +153,14 @@ a {
 
 a:visited{
     color: blue;
+}
+
+hr {
+    margin-top: -0.6%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid #ccc;
 }
 
 /* Change text buttons */
