@@ -2,7 +2,7 @@
     color: #545454;
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: center;
-    font-size: 100px;
+    font-size: 400%;
     padding-bottom: 6vh;
 }
 
@@ -91,15 +91,20 @@ a:hover img.imagedropshadow {
     word-wrap: break-word;
 }
 
-.scrollablewindow .category{
-    font-size: 7vh;
+.scrollablewindow .title{
+    font-size: 5vh;
     text-align: center;
     margin-bottom: 2vh;
 }
 
-.scrollablewindow .content{
-    display: inline;
-    margin: 1vh 0 1vh 1vh;
+.scrollablewindow .group{
+    width: 95%;
+    font-size: 100%;
+}
+
+.scrollablewindow .group .content{
+    margin-left: 1vh;
+    margin-bottom: 1vw;
     font-size: 3vh;
     text-align: left;
 }
@@ -112,7 +117,7 @@ height: 12px;
 
 
 ::-webkit-scrollbar-thumb {
-background: yellowgreen;  
+background: blue;  
 border-radius: 10px;
 }
 
@@ -127,17 +132,6 @@ a {
 
 a:visited{
     color: blue;
-}
-
-.projectlink{
-    white-space: nowrap;
-    border: 1px solid gray;
-    border-radius: 70px;
-    color: black;
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-align: center;
-    font-size: 70%; 
-    text-decoration: none;
 }
 
 /* Change text buttons */
