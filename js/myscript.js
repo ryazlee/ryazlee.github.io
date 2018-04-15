@@ -24,3 +24,9 @@ function showaboutgroup() {
     document.getElementById('coursesbutton').style.color = "black";
     document.getElementById('aboutbutton').style.color = "blue";
 }
+
+function onload(){
+    document.getElementById('projectsbutton').style.color = "black";
+    document.getElementById('coursesbutton').style.color = "black";
+    document.getElementById('aboutbutton').style.color = "blue";   
+}
