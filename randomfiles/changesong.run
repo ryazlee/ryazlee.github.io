@@ -1,5 +1,5 @@
 cd ~/Documents/projects/guessthatsongday/java/
-java lyricFileCreator lilpump guccigang
+java lyricFileCreator owlcity fireflies
 cd ..
 git add .
 git commit -m "changed song"

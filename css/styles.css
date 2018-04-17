@@ -137,6 +137,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-shadow: 1px 1px 5px green;
+}
+
 .button {
     border: 0;
     color: black;
