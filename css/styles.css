@@ -1,127 +1,169 @@
 .titletext {
-    color: #99E1D9;
-    padding: 20px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 300%;
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-size: 250%;
+    padding-bottom: 8vh;
+    padding-top: 3.5vh;
 }
 
-.basictext {
-    color: black;
-    font-family: 'Assistant';
-    font-size: 160%;
+.titletext:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+.connectlinks{
+    float: left;
+    clear: left;
+    width: 45%;
     text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.projectlink{
-    white-space: nowrap;
-    width: 200%; 
-    line-height: 250%;
-    border: 3px solid #99E1D9;
-    border-radius: 70px;
-    color: black;
-    font-family: 'Assistant';
-    padding: 7px 1.5%;
+.connectlinks .textheader{
+    color: #545454;
+    font-size: 3vh;
+}
+
+.connectlinks .textcontainer{
+    padding-bottom: 3vh;
+}
+
+.connectlinks .textcontainer .text{
     text-align: center;
-    font-size: 120%; 
-    text-decoration: none;
-}
-
-.projectlink:hover {
-    background-color: #99E1D9;
-    color: white;
-}
-
-.contactlink{
-    display: inline-block;
-    color: #99E1D9;
-    font-family: 'Assistant';
-    font-size: 160%;
-    text-decoration: None;
-}
-
-.contactlink:hover{
-    color:#FFFAE3; 
-}
-
-.footertext{
-    display: inline-block;
-    color: white;
-    font-family: 'Assistant';
-    font-size: 160%; 
-    text-decoration: None;
-}
-
-
-html{
-    background-attachment: fixed
-    height: 100%;
-    background-repeat: no-repeat;
-    padding-bottom:0px;
-    background-size: cover;
-}
-
-#footer{
-    width: 80%;
-    padding-left: 10%;
-    display: inline-block;
-    /*background: #FFFAE3;*/
-    /*position: fixed;*/
-    padding-top: 5%;
-    font-size: 15px;
-    padding-bottom: 5%;
-    text-align: center;
-}
-
-div span{
-    text-align: center;
-    padding-top: 17%;
-    padding-left: 0.7%;
-    padding-right: 0.7%;
-    padding-bottom: 0px;
-    /*background: #FFFAE3;*/
-}
-
-
-/* Menu Bar */
-ul {
-    line-height: 130%;   
-    width: 80%;
-    padding-left: 10%; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-li {
-    font-size: 2.5vh;
     display: inline;
+    color: #545454;
+    font-size: 2.5vh;
 }
 
-li a {
-    color: #5D576B;
-    padding: 1.5vw;
+.connectlinks .imagecontainer{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.connectlinks .imagecontainer .a{
     text-decoration: none;
-    font-family: 'Quicksand';
 }
 
-li a:hover {
-    color: #99E1D9;
-    /* background-color: #FFFFFF; */
+.connectlinks .imagecontainer .image{
+    width: 5vh;
+    padding: 1vh;
 }
 
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+.connectlinks .imagecontainer .image:hover{
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 0px #999;
+    -webkit-box-shadow: 1px 1px 0px #999;
+    box-shadow: 1px 1px 0px #999;
 }
 
-.rotate180 {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+#ppimage{
+    width: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(150px - 10vw);
+}
+
+
+
+/* Scrollable Window */
+.scrollablewindow{
+    float: right;
+    height: 72vh;
+    margin-right: 4%;
+    width: 50%;
+    border:1px solid darkgrey;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow:scroll;
+    word-wrap: break-word;
+}
+
+.scrollablewindow .title{
+    font-size: 5vh;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.scrollablewindow .group{
+    width: 100%;
+    font-size: 90%;
+}
+
+.scrollablewindow .group .content{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 1.5vw;
+    font-size: 2.5vh;
+    text-align: left;
+}
+
+
+::-webkit-scrollbar {
+width: 10.5px;
+height: 12px;
+}
+
+
+::-webkit-scrollbar-thumb {
+background: darkgrey;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: darkgrey;
+}
+
+/* General Modifications */
+a {
+    text-decoration: none;
+    color: black
+}
+
+
+a:hover {
+    text-shadow: 1px 1px 3px black;
+}
+
+.button {
+    border: 0;
+    color: black;
+    background: transparent;
+    padding: 2% 5%;
+    text-align: center;
+    fontWeight: 0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 70%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    font-family: 'IBM Plex Sans', sans-serif;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 3px black;
+}
+
+a:visited{
+    color: black;
+}
+
+hr {
+    margin-top: -0.6%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid #ccc;
+}
+
+/* rotating image */
+
+.rotatingimage{
+    transform-origin:50% 50%;
+    animation:2s rotateRight infinite linear;
+}
+
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
 }
