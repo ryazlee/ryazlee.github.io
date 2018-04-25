@@ -35,3 +35,11 @@ function onload(){
     document.getElementById('aboutbutton').style.color = "black";
     document.getElementById('aboutbutton').style.fontWeight = 900;
 }
+
+function changetorotate() {
+    document.getElementById("ppimage").className = "rotatingimage";
+}
+
+function stoprotate() {
+    document.getElementById("ppimage").className = "initial";
+}
