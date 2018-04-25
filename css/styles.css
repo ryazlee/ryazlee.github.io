@@ -64,8 +64,6 @@
     margin-bottom: calc(150px - 10vw);
 }
 
-
-
 /* Scrollable Window */
 .scrollablewindow{
     float: right;
@@ -115,8 +113,8 @@ background: darkgrey;
 
 /* General Modifications */
 a {
-    text-decoration: none;
-    color: black
+    text-decoration: none; 
+    font-weight: 900;
 }
 
 
