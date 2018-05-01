@@ -50,10 +50,8 @@
 }
 
 .connectlinks .imagecontainer .image:hover{
-    border: solid 1px #CCC;
-    -moz-box-shadow: 1px 1px 0px #999;
-    -webkit-box-shadow: 1px 1px 0px #999;
-    box-shadow: 1px 1px 0px #999;
+    transform-origin:50% 50%;
+    animation:2s rotateLeft infinite linear;
 }
 
 #ppimage{
@@ -164,4 +162,8 @@ hr {
 
 @keyframes rotateRight{
     100%{ transform:rotate(360deg); }
+}
+
+@keyframes rotateLeft{
+    100%{ transform:rotate(-360deg); }
 }
