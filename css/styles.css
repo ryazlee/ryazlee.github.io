@@ -59,7 +59,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: calc(150px - 10vw);
+    margin-bottom: 7vw;
 }
 
 /* Scrollable Window */

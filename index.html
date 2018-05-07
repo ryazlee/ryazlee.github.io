@@ -4,17 +4,16 @@
         <title>Ryan Lee</title>
         <link rel = "icon" href = "pics/sandwichicon.png">
         <link rel = "stylesheet" href = "css/styles.css">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/myscript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Delius|IBM+Plex+Sans:100" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <div style = "font-family: avenir" class = "titletext">RYAN J LEE</div>
     </head>
     <body onload = "onload()">
-    <div style = "float: left; width: 45%"><img id = "ppimage" class = "dropshadowclass" src = "pics/ppcirc.png" onmouseover="changetorotate()" onmouseleave="stoprotate()"></div>
+    <div style = "font-family: avenir" class = "titletext">RYAN J LEE</div>
+    <div id = "ppimagecontainer" style = "float: left; width: 45%; padding-bottom: 5%"><img id = "ppimage" class = "dropshadowclass" src = "pics/ppcirc.png" onmouseover="changetorotate()" onmouseleave="stoprotate()"></div>
 
-    <div class = "scrollablewindow dropshadowclass">
-
+    <div id = "scrollablewindow" class = "scrollablewindow dropshadowclass">
             <div style = "width: 100%" class = "title">
                 <button id = "projectsbutton" class = "button" onclick="showprojectsgroup()">PROJECTS</button>
                 <button id = "aboutbutton" class = "button" onclick="showaboutgroup()">ABOUT</button>
@@ -54,7 +53,7 @@ i occasionally post videos to youtube where i do random things to brighten up pe
         </div>
 
 
-        <div class = "connectlinks">
+        <div id = "connectlinks" class = "connectlinks">
             <div class = "textheader">connect with  me via</div>
             <div class = "imagecontainer">
                 <a href="https://github.com/ryazlee"><img src = "pics/githubicon.png" class = "image"</div></a>
@@ -68,8 +67,11 @@ i occasionally post videos to youtube where i do random things to brighten up pe
             </div>
         </div>
 
-        <!-- Start HERE -->
-        <div></div>
+        <script>
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+        </script>
 
     </body>
 </html>
