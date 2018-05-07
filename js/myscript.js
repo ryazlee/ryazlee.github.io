@@ -6,7 +6,7 @@ function myFunction(x) {
         document.getElementById('scrollablewindow').style.width = "90%";
         document.getElementById('scrollablewindow').style.margin = "auto";
         document.getElementById('scrollablewindow').style.float= "none";
-        document.getElementById('scrollablewindow').style.marginBottom= "12%";
+        document.getElementById('scrollablewindow').style.marginBottom= "5vh";
         document.getElementById('connectlinks').style.width = "90%";
         document.getElementById('connectlinks').style.float= "none";       
         document.getElementById('connectlinks').style.margin= "auto";
