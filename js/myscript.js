@@ -6,18 +6,20 @@ function myFunction(x) {
         document.getElementById('scrollablewindow').style.width = "90%";
         document.getElementById('scrollablewindow').style.margin = "auto";
         document.getElementById('scrollablewindow').style.float= "none";
+        document.getElementById('scrollablewindow').style.marginBottom= "12%";
         document.getElementById('connectlinks').style.width = "90%";
-        document.getElementById('connectlinks').style.float= "none";
-        
+        document.getElementById('connectlinks').style.float= "none";       
+        document.getElementById('connectlinks').style.margin= "auto";
     } else {
         document.getElementById('ppimagecontainer').style.float = "left";
         document.getElementById('ppimagecontainer').style.width = "45%";
         document.getElementById('ppimage').style.width = "25vw";
         document.getElementById('scrollablewindow').style.width = "50%";
         document.getElementById('scrollablewindow').style.marginRight = "4%";
+        document.getElementById('scrollablewindow').style.marginBottom= "0%";
         document.getElementById('connectlinks').style.width = "45%";
         document.getElementById('connectlinks').style.float= "left";
-        document.getElementById('connectlinks').style.marginTop= "-10%";
+        document.getElementById('connectlinks').style.marginTop= "-11%";
     }
 }
 
