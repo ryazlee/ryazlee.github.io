@@ -75,6 +75,7 @@
 }
 
 .scrollablewindow .title{
+    position: relative;
     font-size: 5vh;
     text-align: center;
     margin-bottom: 2vh;
