@@ -19,7 +19,7 @@ function myFunction(x) {
         document.getElementById('scrollablewindow').style.marginBottom= "0%";
         document.getElementById('connectlinks').style.width = "45%";
         document.getElementById('connectlinks').style.float= "left";
-        document.getElementById('connectlinks').style.marginTop= "-11%";
+        document.getElementById('connectlinks').style.marginTop= "-18vh";
     }
 }
 

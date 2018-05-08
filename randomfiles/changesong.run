@@ -1,5 +1,5 @@
 cd ~/Documents/projects/guessthatsongday/java/
-java lyricFileCreator owlcity fireflies
+java lyricFileCreator kanyewest famous 
 cd ..
 git add .
 git commit -m "changed song"
