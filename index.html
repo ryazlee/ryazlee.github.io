@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body onload = "onload()">
+    <button onclick="topFunction()" id="scrollupbutton" title="Go to top">^</button>
     <div style = "font-family: avenir" class = "titletext">RYAN J LEE</div>
     <div id = "ppimagecontainer" style = "float: left; width: 45%; padding-bottom: 5%"><img id = "ppimage" class = "dropshadowclass" src = "pics/ppcirc.png" onmouseover="changetorotate()" onmouseleave="stoprotate()"></div>
 
@@ -71,6 +72,7 @@ i occasionally post videos to youtube where i do random things to brighten up pe
         var x = window.matchMedia("(max-width: 700px)")
         myFunction(x) // Call listener function at run time
         x.addListener(myFunction) // Attach listener function on state changes
+        window.onscroll = function() {scrollFunction()};
         </script>
 
     </body>
