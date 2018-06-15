@@ -5,9 +5,10 @@
 
 .view .content{
     position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
+    top: 40vh;
+    transform: translateY(-40%);
     vertical-align: middle;
+    text-align: center;
 }
 
 .view .title{
@@ -18,8 +19,8 @@
 .view .right{
     padding: 5%;
     position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
+    top: 40vh;
+    transform: translateY(-40%);
     text-align: center;
     width: 40%;
     float: right;
@@ -29,8 +30,8 @@
 .view .left{
     padding: 5%;
     position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
+    top: 40vh;
+    transform: translateY(-40%);
     text-align: left;
     width: 40%;
     float: left;
@@ -72,14 +73,7 @@
     color: purple;
 }
 
-#projects_view .projects_cont{
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
-    vertical-align: middle;
-}
-
-#projects_view .projects_cont .project{
+#projects_view .content .project{
     background-color: LightGreen;
     border-radius: 25px;
     display: inline-block;
@@ -87,15 +81,17 @@
     padding: 2.5%;
     height: 200px;
     width: 225px;
+    border-style: solid;
+    border-width: 2px;
 }
 
-#projects_view .projects_cont .project .title{
+#projects_view .content .project .title{
     position: relative;
     height: 10%;
     margin-bottom: 35%;
 }
 
-#projects_view .projects_cont .project .text{
+#projects_view .content .project .text{
     margin: 10% 0;
 }
 
