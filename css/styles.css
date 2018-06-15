@@ -1,194 +1,36 @@
-.titletext {
-    color: #545454;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 250%;
-    padding-bottom: 8vh;
-    padding-top: 3.5vh;
+.view{
+    height: 100vh;
+    padding: 5%;
 }
 
-.titletext:hover {
-    text-shadow: 1px 1px 2px black;
-}
-
-.connectlinks{
-    float: left;
-    clear: left;
-    width: 45%;
-    text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.connectlinks .textheader{
-    color: #545454;
-    font-size: 3vh;
-}
-
-.connectlinks .textcontainer{
-    padding-bottom: 3vh;
-}
-
-.connectlinks .textcontainer .text{
-    text-align: center;
-    display: inline;
-    color: #545454;
-    font-size: 2.5vh;
-}
-
-.connectlinks .imagecontainer{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-}
-
-.connectlinks .imagecontainer .a{
-    text-decoration: none;
-}
-
-.connectlinks .imagecontainer .image{
-    width: 5vh;
-    padding: 1vh;
-}
-
-.connectlinks .imagecontainer .image:hover{
-    transform-origin:50% 50%;
-    animation:2s rotateLeft infinite linear;
-}
-
-#ppimage{
-    width: 25vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7vw;
-}
-
-/* Scrollable Window */
-.scrollablewindow{
-    float: right;
-    height: 72vh;
-    margin-right: 4%;
-    width: 50%;
-    border:1px solid darkgrey;
-    font-family: 'IBM Plex Sans', sans-serif;
-    overflow:scroll;
-    word-wrap: break-word;
-}
-
-.scrollablewindow .title{
+.view .right{
+    padding: 5%;
     position: relative;
-    font-size: 5vh;
+    top: 50vh;
+    transform: translateY(-50%);
     text-align: center;
-    margin-bottom: 2vh;
+    width: 40%;
+    float: right;
+    background: None;
 }
 
-.scrollablewindow .group{
-    width: 100%;
-    font-size: 100%;
-}
-
-.scrollablewindow .group .content{
-    margin-left: 1vh;
-    margin-right: 1vh;
-    margin-bottom: 1.5vw;
-    font-size: 3vh;
+.view .left{
+    padding: 5%;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
     text-align: left;
+    width: 40%;
+    float: left;
+    background: None;
+}
+
+#home_view{
+    font-size: 300%;
+}
+
+html{
+    font-family: "Avenir";
 }
 
 
-::-webkit-scrollbar {
-width: 10.5px;
-height: 12px;
-}
-
-
-::-webkit-scrollbar-thumb {
-background: darkgrey;
-border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: darkgrey;
-}
-
-/* General Modifications */
-a {
-    text-decoration: none; 
-    font-weight: 900;
-}
-
-
-a:hover {
-    text-shadow: 1px 1px 3px black;
-}
-
-.button {
-    border: 0;
-    color: black;
-    background: transparent;
-    padding: 2% 5%;
-    text-align: center;
-    fontWeight: 0;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 70%;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    font-family: 'IBM Plex Sans', sans-serif;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button:hover{
-    color: white;
-    text-shadow: 1px 1px 2px white, 0 0 25px black, 0 0 3px black;
-}
-
-a:visited{
-    color: black;
-}
-
-a:link{
-    color: black;
-}
-
-hr {
-    margin-top: -0.6%;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 4px solid #ccc;
-}
-
-#scrollupbutton {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  padding: 5px 15px;
-  border-radius: 4px;
-}
-
-#scrollupbutton:hover {
-  background-color: #555;
-}
-
-/* rotating image */
-
-.rotatingimage{
-    transform-origin:50% 50%;
-    animation:2s rotateRight infinite linear;
-}
-
-@keyframes rotateRight{
-    100%{ transform:rotate(360deg); }
-}
-
-@keyframes rotateLeft{
-    100%{ transform:rotate(-360deg); }
-}
