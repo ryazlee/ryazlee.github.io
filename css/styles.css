@@ -3,6 +3,13 @@
     padding: 5%;
 }
 
+.view .content{
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
 .view .title{
     position: absolute;
     font-size: 200%;
@@ -30,6 +37,16 @@
     background: None;
 }
 
+.zoom{
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
 #home_view{
     font-size: 300%;
 }
@@ -47,6 +64,10 @@
     text-align: center;
 }
 
+#links_view{
+    color: orange;
+}
+
 #contact_view{
     color: purple;
 }
@@ -62,10 +83,10 @@
     background-color: LightGreen;
     border-radius: 25px;
     display: inline-block;
-    margin: 0 5%;
+    margin: 5% 5%;
     padding: 2.5%;
     height: 200px;
-    width: 250px;
+    width: 225px;
 }
 
 #projects_view .projects_cont .project .title{
