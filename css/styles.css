@@ -1,6 +1,11 @@
 .view{
-    height: 100vh;
+    height: 90vh;
     padding: 5%;
+}
+
+.view .title{
+    position: absolute;
+    font-size: 200%;
 }
 
 .view .right{
@@ -29,8 +34,65 @@
     font-size: 300%;
 }
 
+#about_view{
+    color: red;
+}
+
+#websites_view{
+    color: blue;
+}
+
+#projects_view{
+    color: green;
+    text-align: center;
+}
+
+#contact_view{
+    color: purple;
+}
+
+#projects_view .projects_cont{
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
+#projects_view .projects_cont .project{
+    background-color: LightGreen;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 0 5%;
+    padding: 2.5%;
+    height: 200px;
+    width: 250px;
+}
+
+#projects_view .projects_cont .project .title{
+    position: relative;
+    height: 10%;
+    margin-bottom: 35%;
+}
+
+#projects_view .projects_cont .project .text{
+    margin: 10% 0;
+}
+
+#back_to_home{
+    padding: 5%;
+    margin:auto;
+}
+
 html{
     font-family: "Avenir";
 }
 
+a {
+    text-decoration: none;
+    display: inline;
+    padding: 0 5%;
+}
 
+a:hover{
+    text-decoration: underline;
+}
