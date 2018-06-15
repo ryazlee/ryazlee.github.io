@@ -1,14 +1,20 @@
 .view{
-    height: 90vh;
+    min-height: 90vh;
     padding: 5%;
+    padding-bottom: 150px;
 }
 
-.view .content{
+.view .center_content{
     position: relative;
     top: 40vh;
     transform: translateY(-40%);
     vertical-align: middle;
     text-align: center;
+}
+
+.view .no_center_content{
+    position: relative;
+    top: 5vh;
 }
 
 .view .title{
@@ -73,11 +79,11 @@
     color: purple;
 }
 
-#projects_view .content .project{
+#projects_view .no_center_content .project{
     background-color: LightGreen;
     border-radius: 25px;
     display: inline-block;
-    margin: 5% 5%;
+    margin: 2% 5%;
     padding: 2.5%;
     height: 200px;
     width: 225px;
@@ -85,13 +91,13 @@
     border-width: 2px;
 }
 
-#projects_view .content .project .title{
+#projects_view .no_center_content .project .title{
     position: relative;
     height: 10%;
     margin-bottom: 35%;
 }
 
-#projects_view .content .project .text{
+#projects_view .no_center_content .project .text{
     margin: 10% 0;
 }
 
