@@ -148,7 +148,7 @@
 
 #back_to_home{
     position: fixed;
-    bottom: 2.5%;
+    bottom: 0;
     right: 0%;
     display: None;
 }
