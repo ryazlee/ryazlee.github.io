@@ -171,7 +171,7 @@ a:hover{
 /* Site Preview */
 .box{
     visibility:visible;
-    height: 50vh;
+    height: 325px;
     width: 100%;
     opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;
