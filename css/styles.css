@@ -49,9 +49,9 @@
 }
 
 .zoom:hover{
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 #home_view{
@@ -80,7 +80,7 @@
 }
 
 #projects_view .no_center_content .project{
-    background-color: LightGreen;
+    background-color: PaleGreen;
     border-radius: 25px;
     display: inline-block;
     margin: 2% 5%;
