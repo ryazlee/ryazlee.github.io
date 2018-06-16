@@ -1,5 +1,14 @@
 $(document).ready(function () {
-    // Select all links with hashes
+    // Display back to top button on scroll
+    window.onscroll = function() {
+        if ($(document).scrollTop() > 50){
+            $("#back_to_home").show();
+        } else{
+            $("#back_to_home").hide();
+        }
+    }
+
+    // Smooth scrolling implementation
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
@@ -32,4 +41,5 @@ $(document).ready(function () {
         }
     });
 });
+
 

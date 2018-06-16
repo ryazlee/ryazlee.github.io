@@ -13,13 +13,19 @@
 }
 
 .view .no_center_content{
+    text-align: center;
     position: relative;
-    top: 50px;
+    top: 25px;
 }
 
 .view .title{
     position: absolute;
+    font-size: 300%;
+}
+
+.view .inner_title{
     font-size: 200%;
+    padding-bottom: 2%;
 }
 
 .view .right{
@@ -79,11 +85,33 @@
     color: purple;
 }
 
+#about_view a{
+    color: red;
+}
+
+#projects_view a{
+    color: green;
+}
+
+#websites_view a{
+    color: blue;
+}
+
+#links_view a{
+    color: orange;
+}
+
+#about_view a{
+    color: red;
+}
+
 #projects_view .no_center_content .project{
     background-color: PaleGreen;
     border-radius: 25px;
     display: inline-block;
-    margin: 2% 5%;
+    margin: 5%;
+    margin-top: 65px;
+    margin-bottom: -2.5%;
     padding: 2.5%;
     height: 200px;
     width: 225px;
@@ -95,19 +123,39 @@
     position: relative;
     height: 10%;
     margin-bottom: 35%;
+    font-size: 200%;
 }
 
 #projects_view .no_center_content .project .text{
     margin: 10% 0;
+    height: 30%;
+}
+
+#websites_view .no_center_content .site{
+    height: 200px;
+    width: 250px;
+    margin: 2% 5%;
+    padding: 2.5%;
+    display: inline-block;
 }
 
 #back_to_home{
-    padding: 5%;
-    margin:auto;
+    position: fixed;
+    bottom: 2.5%;
+    right: 0%;
+    display: None;
+}
+
+#links_view .inner_title{
+    white-space: nowrap;
 }
 
 html{
     font-family: "Avenir";
+}
+
+body{
+    max-height: 200%;
 }
 
 a {
@@ -119,3 +167,20 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
+/* Site Preview */
+.box{
+    visibility:visible;
+    height: 50vh;
+    width: 100%;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+a:hover + .box,.box:hover{
+    visibility: visible;
+    position: relative;
+    z-index: 100;
+    opacity: 1;
+}
+
