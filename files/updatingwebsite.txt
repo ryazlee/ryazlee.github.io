@@ -1,20 +1,20 @@
 Updating Website using Github
 
-1. Navigate to uazb.github.io (which should be on your desktop)
+1. Navigate to <username>.github.io (which should be on your desktop)
     - use cd <directory> to navigate into <directory>
     - use cd .. to go up a directory
     - use ls to list everything in your current directory
 
 2. Keep terminal in the directory that contains your index
 
-3. Once you find the .html file that you want to edit, open the file with atom
+3. Once you find the .html file that you want to edit, open the file with code editor
     - make changes
 
-4. When done editting, save work with atom and go back to the terminal window (which should be in the uazb.github.io folder)
+4. When done editting, save work with atom and go back to the terminal window (which should be in the <username>.github.io folder)
     - run these commands in this order:
         - git add .
         - git commit -m "<message>"
             - replace the <message> with a description of changes that you had made
         - git push
 
-5. Wait for terminal scripts to run and go to uazb.github.io in web browser to see your site!!!!!!
+5. Wait for terminal scripts to run and go to <username>.github.io in web browser to see your site!!!!!!
