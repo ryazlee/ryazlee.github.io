@@ -141,7 +141,7 @@
 
 #websites_view .no_center_content .site{
     height: 200px;
-    width: 300px;
+    width: 250px;
     margin: 2% 5%;
     margin-top: 5%;
     padding: 2.5%;
@@ -187,7 +187,6 @@ a:hover{
     margin-top: 10%;
     visibility: visible;
     height: 50vh;
-    -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
     /*opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;*/
