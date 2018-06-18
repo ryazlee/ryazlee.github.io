@@ -115,7 +115,6 @@
 
 #projects_view .no_center_content .project{
     background-color: PaleGreen;
-    border-radius: 25px;
     display: inline-block;
     margin: 5%;
     margin-top: 65px;
@@ -123,6 +122,7 @@
     padding: 2.5%;
     height: 200px;
     width: 225px;
+    border-radius: 25px;
     border-style: solid;
     border-width: 2px;
 }
@@ -187,7 +187,11 @@ a:hover{
     margin-top: 10%;
     visibility: visible;
     height: 50vh;
+    overflow: hidden;
     overflow-y: scroll;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
     /*opacity: 1;
     transition: visibility 0s, opacity 0.5s linear;*/
 }
