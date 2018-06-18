@@ -1,5 +1,6 @@
 .view{
     min-height: 90vh;
+    width: 85vw;
     padding: 5%;
     padding-bottom: 100px;
     text-align: center;
@@ -7,23 +8,23 @@
 
 .view .center_content{
     position: relative;
-    top: 40vh;
-    transform: translateY(-40%);
+    top: 50vh;
+    transform: translateY(-50%);
     vertical-align: middle;
 }
 
 .view .no_center_content{
     position: relative;
-    top: 25px;
+    top: 5vh;
 }
 
 .view .title{
     position: absolute;
-    font-size: 300%;
+    font-size: 10vh;
 }
 
 .view .inner_title{
-    font-size: 200%;
+    font-size: 5vh;
     padding-bottom: 2%;
 }
 
@@ -68,7 +69,7 @@
 }
 
 #home_view{
-    font-size: 300%;
+    font-size: 8vh;
 }
 
 #about_view{
