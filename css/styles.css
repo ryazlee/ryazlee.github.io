@@ -24,7 +24,7 @@
 }
 
 .view .inner_title{
-    font-size: 5vh;
+    font-size: 4.5vh;
     padding-bottom: 2%;
 }
 
@@ -163,6 +163,7 @@
     display: block;
     margin: auto;
     margin-bottom: 2%;
+    margin-top: 8vh;
     width: 35vh;
 }
 
