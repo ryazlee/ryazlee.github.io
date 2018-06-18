@@ -184,17 +184,19 @@ a:hover{
 
 /* Site Preview */
 .box{
-    margin-top: 1%;
-    visibility:visible;
+    margin-top: 10%;
+    visibility: visible;
     height: 50vh;
-    opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear;
+    /*opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;*/
 }
 
+/* Not needed
 a:hover + .box,.box:hover{
     visibility: visible;
     position: relative;
     z-index: 100;
     opacity: 1;
 }
+/*
 
