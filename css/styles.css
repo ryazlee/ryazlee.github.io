@@ -78,25 +78,45 @@
     font-size: 5vh;
 }
 
-#about_view, #about_view a{
+#about_view{
     color: red;
 }
 
-#websites_view, #website_view a{
+#websites_view{
     color: blue;
 }
 
-#projects_view, #project_view a{
+#projects_view{
     color: green;
     text-align: center;
 }
 
-#links_view, #links_view a{
+#links_view{
     color: orange;
 }
 
-#connect_view, #connect_view a{
+#connect_view{
     color: purple;
+}
+
+#about_view a{
+    color: red;
+}
+
+#projects_view a{
+    color: green;
+}
+
+#websites_view a{
+    color: blue;
+}
+
+#links_view a{
+    color: orange;
+}
+
+#about_view a{
+    color: red;
 }
 
 #projects_view .no_center_content .project{
