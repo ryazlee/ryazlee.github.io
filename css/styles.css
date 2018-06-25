@@ -68,6 +68,12 @@
     vertical-align: center;
 }
 
+.vert_center{
+    top: 50vh;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
 #home_view{
     font-size: 5vh;
 }
@@ -98,24 +104,24 @@
     display: inline-block;
     margin: 5%;
     margin-top: 65px;
-    margin-bottom: -2.5%;
     padding: 2.5%;
     height: 200px;
     width: 225px;
-    border-radius: 25px;
+    border-radius: 5px;
     border-style: solid;
+    vertical-align: middle;
     border-width: 2px;
 }
 
 #projects_view .no_center_content .project .title{
     position: relative;
-    height: 10%;
-    margin-bottom: 35%;
+    height: 15%;
+    margin-bottom: 15%;
     font-size: 200%;
 }
 
 #projects_view .no_center_content .project .text{
-    margin: 10% 0;
+    margin: 5% 0;
     height: 30%;
 }
 
