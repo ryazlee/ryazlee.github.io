@@ -2,7 +2,6 @@
     min-height: 90vh;
     width: 90vw;
     margin: auto;
-    padding: 5vh;
     padding-bottom: 100px;
     text-align: center;
 }
@@ -77,6 +76,15 @@
     vertical-align: middle;
 }
 
+.project{
+    height: 200px;
+    width: 300px;
+    margin: 2% 5%;
+    margin-top: 5vh;
+    padding: 2.5%;
+    display: inline-block;
+}
+
 .dim:hover{
     opacity: 0.7;
     filter: alpha(opacity=70);
@@ -105,42 +113,6 @@
 
 #connect_view, #connect_view a{
     color: purple;
-}
-
-#projects_view .no_center_content .project{
-    background-color: PaleGreen;
-    display: inline-block;
-    margin: 5%;
-    margin-top: 65px;
-    padding: 2.5%;
-    height: 200px;
-    width: 225px;
-    border-radius: 5px;
-    border-style: solid;
-    vertical-align: middle;
-    border-width: 2px;
-}
-
-#projects_view .no_center_content .project .title{
-    position: relative;
-    height: 30%;
-    margin-bottom: 15%;
-    font-size: 200%;
-}
-
-#projects_view .no_center_content .project .text{
-    position: relative;
-    margin: 5% 0;
-    height: 30%;
-}
-
-#websites_view .no_center_content .site{
-    height: 200px;
-    width: 300px;
-    margin: 2% 5%;
-    margin-top: 5vh;
-    padding: 2.5%;
-    display: inline-block;
 }
 
 #back_to_home{
@@ -181,13 +153,12 @@ a:hover{
 .box{
     visibility: visible;
     height: 50vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    border-radius: 5px;
     border-style: solid;
     border-width: 2px;
     /*opacity: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
     transition: visibility 0s, opacity 0.5s linear;*/
 }
 
