@@ -125,9 +125,7 @@
 
 #about_pic{
     display: block;
-    margin: auto;
-    margin-bottom: 2%;
-    margin-top: 8vh;
+    margin: 1% auto;
     width: 35vh;
 }
 
