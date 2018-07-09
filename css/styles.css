@@ -91,6 +91,10 @@
     filter: alpha(opacity=70);
 }
 
+.list{
+    padding: 0;
+}
+
 #home_view{
     font-size: 5vh;
 }
@@ -140,8 +144,7 @@ body{
 a{
     text-decoration: none;
     display: inline-block;
-    padding: 0 2.5%;
-    padding-bottom: 5%;
+    padding: 2.5%;
 }
 
 a:hover{
