@@ -1,3 +1,3 @@
 # ryazlee.github.io
 
-Personal Website....
+Just a place for me to practice my web development
