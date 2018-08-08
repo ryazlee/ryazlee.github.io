@@ -18,6 +18,7 @@ Updating github.io pages
 5. Wait for terminal scripts to run and go to <username>.github.io in web browser to see your site!!!!!!
 
 Collaborating with forks
+0. Ensure that you create a local remote: git remote add upstream <git project>
 1. Navigate to forked repository on local machine
 2. Type "git pull upstream master" to update local repository with upstream code
 3. Make edits and add/commit/push
