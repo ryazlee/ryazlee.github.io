@@ -16,6 +16,7 @@ html{
     margin-bottom: 30px;
     max-width: 600px;
     height: auto;
+    box-shadow: 2.5px 5px silver;
 }
 
 .title{
@@ -31,16 +32,17 @@ html{
 }
 
 .card{
-    max-width: 90%;
+    width: 90%;
     padding: 20px 10px;
     margin-left: 5%;
     display: inline-block;
 }
 
 .card img{
-    max-width: 30%; 
+    max-width: 20%; 
     float:left;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .card .content{
