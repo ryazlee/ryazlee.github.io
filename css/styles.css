@@ -34,13 +34,13 @@ html{
 .card{
     width: 90%;
     padding: 20px 10px;
-    margin-left: 5%;
-    display: inline-block;
+    margin: auto;
+    display: table;
 }
 
 .card img{
     width: 100px; 
-    float:left;
+    float: left;
     display: inline-block;
     vertical-align: middle;
     padding-right: 20px;
