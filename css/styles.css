@@ -75,3 +75,18 @@ html{
     opacity: 0.7;
     filter: alpha(opacity=70);
 }
+
+#about_elem{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #FF4040;
+}
+
+#prof_pic{
+    width: 25%;
+    height: auto;
+    margin: 25px 0;
+    border: 4px solid #FF4040;
+    border-radius: 50%;
+}
