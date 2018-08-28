@@ -1,56 +1,64 @@
-.view{
-    min-height: 90vh;
-    width: 90vw;
-    padding: 1vw 2.5vw;
-    margin: auto;
-    padding-bottom: 100px;
+html{
+    font-family: 'Ubuntu Condensed';
+}
+
+#title{
     text-align: center;
+    font-size: 300%;
+    padding: 10px;
 }
 
-.view .center_content{
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
-    vertical-align: middle;
+#projects_elem{
+    border-radius: 20px;
+    border: 2px solid #FF4040;
+    padding: 20px; 
+    margin: 10px auto;
+    margin-bottom: 30px;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 2.5px 5px silver;
 }
 
-.view .no_center_content{
-    position: relative;
-    top: 5vh;
-}
-
-.view .title{
-    position: absolute;
-    font-size: 7vh;
-}
-
-.view .inner_title{
-    font-size: 3.5vh;
-    padding-bottom: 2%;
-}
-
-.view .right{
-    padding: 5%;
-    position: relative;
-    top: 40vh;
-    transform: translateY(-40%);
+.title{
     text-align: center;
-    width: 40%;
-    margin: auto;
-    float: right;
-    background: None;
+    font-size: 175%;
 }
 
-.view .left{
-    padding: 5%;
-    position: relative;
-    top: 40vh;
-    transform: translateY(-40%);
-    text-align: left;
-    width: 40%;
+.inner_title{
+    text-align: center;
+    font-size: larger;
+    color: #FF4040;
+    padding: 5px;
+}
+
+.card{
+    width: 90%;
+    padding: 20px 10px;
     margin: auto;
+    display: table;
+}
+
+.card img{
+    width: 100px; 
     float: left;
-    background: None;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.card .content{
+    max-width: 75%;
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+.image{
+    display: inline;
+    width: 50px;
+    height: auto;
+    padding: 2%;
+    vertical-align: center;
 }
 
 .zoom{
@@ -63,113 +71,22 @@
     transform: scale(1.1);
 }
 
-.image{
-    display: inline;
-    width: 75px;
-    height: 75px;
-    padding-bottom: 2%;
-    vertical-align: center;
-}
-
-.vert_center{
-    top: 50vh;
-    transform: translateY(-50%);
-    vertical-align: middle;
-}
-
-.project{
-    height: 200px;
-    width: 300px;
-    margin: 2% auto;
-    margin-top: 5vh;
-    padding: 2.5%;
-    display: inline-block;
-}
-
 .dim:hover{
     opacity: 0.7;
     filter: alpha(opacity=70);
 }
 
-.list{
-    padding: 0;
-}
-
-#home_view{
-    font-size: 5vh;
-}
-
-#about_view, #about_view a{
-    color: red;
-}
-
-#websites_view, #websites_view a{
-    color: blue;
-}
-
-#projects_view, #projects_view a{
-    color: green;
+#about_elem{
     text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #FF4040;
 }
 
-#links_view, #links_view a{
-    color: orange;
+#prof_pic{
+    width: 200px;
+    height: auto;
+    margin: 25px 0;
+    border: 4px solid #FF4040;
+    border-radius: 50%;
 }
-
-#connect_view, #connect_view a{
-    color: purple;
-}
-
-#back_to_home{
-    position: fixed;
-    bottom: 0;
-    right: 0%;
-    display: None;
-}
-
-#about_pic{
-    display: block;
-    margin: 2% auto;
-    width: 35vh;
-}
-
-html{
-    font-family: 'Ubuntu Condensed';
-}
-
-body{
-    max-height: 200%;
-}
-
-a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 2.5%;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-/* Site Preview */
-.box{
-    visibility: visible;
-    height: 50vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    border-style: solid;
-    border-width: 2px;
-    /*opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear;*/
-}
-
-/* Not needed
-a:hover + .box,.box:hover{
-    visibility: visible;
-    position: relative;
-    z-index: 100;
-    opacity: 1;
-}
-/*
-
