@@ -39,15 +39,15 @@ html{
 }
 
 .card img{
-    width: 100px; 
+    width: 95px; 
     float: left;
     display: inline-block;
     vertical-align: middle;
-    padding-right: 20px;
+    padding: 0 7.5%;
 }
 
 .card .content{
-    max-width: 75%;
+    max-width: 100%;
     display: table;
     margin: auto;
     text-align: center;
