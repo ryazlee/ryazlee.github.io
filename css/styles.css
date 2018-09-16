@@ -1,5 +1,22 @@
+:root {
+     --main-bg-color: mediumslateblue;
+}
+
 html{
     font-family: 'Ubuntu Condensed';
+}
+
+.btn{
+    background-color: var(--main-bg-color);  
+    border-radius: 5px;
+    color: white;
+    padding: .01em .3em;
+    text-decoration: none;
+}
+
+.btn:focus, .btn:hover {
+  background-color: lightgrey;
+  color: var(--main-bg-color);
 }
 
 #title{
@@ -9,11 +26,11 @@ html{
 }
 
 .inner_title, #about_elem{
-    color: MEDIUMSLATEBLUE;
+    color: var(--main-bg-color);
 }
 
 #projects_elem, #prof_pic{
-    border: 4px solid MEDIUMSLATEBLUE;
+    border: 2px solid var(--main-bg-color);
 }
 
 #projects_elem{
@@ -41,15 +58,13 @@ html{
     width: 90%;
     padding: 20px 10px;
     margin: auto;
-    display: table;
+    text-align: center;
 }
 
 .card img{
     width: 95px; 
-    float: left;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 7.5%;
+    margin: auto;
+    padding: 2.5%;
 }
 
 .card .content{
