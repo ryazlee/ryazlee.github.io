@@ -11,7 +11,6 @@ const links_data = [
 
 class App extends Component {
   render() {
-    console.log(links_data);
     return (
       <div className="App">
         <header className="App-header">
