@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './img/r_logo.png';
-import './App.css';
-import Link from './components/Link.js'
+import logo from './../img/r_logo.png';
+import './../css/App.css';
+import Link from './Link.js'
 
 const links_data = [
     {"name":"LinkedIn", "source": "https://www.linkedin.com/in/ryazlee/"},
