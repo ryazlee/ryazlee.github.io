@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
-import links_data from './../data/data.js';
+import React from 'react';
 
-class Links extends Component {
-  render() {
-    return (
-      <a href="https://github.com/ryazlee">Github</a>          
-    );
-  }
-}
+const Link = ({ source, name }) => (
+  <a href={source}>{name}</a>
+);
 
-export default Links;
+export default Link;
