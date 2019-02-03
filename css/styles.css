@@ -1,5 +1,7 @@
 :root {
-  --main-text-color: #9DC183;
+  --main-text-color: #DCD9CD;
+  --title-text-color: #FFFFFF;
+  --special-text-color: #9DC183;
   --main-bg-color: #5E5E7A;
 }
 
@@ -12,11 +14,11 @@ html {
   justify-content: center;
   font-size: calc(40px + 2vmin);
   font-family: "Ubuntu";
+  color: var(--main-text-color);
 }
 
 .main {
   text-align: center;
-  color: white;
   padding-bottom: 25px;
 }
 
@@ -30,7 +32,7 @@ html {
 }
 
 .link {
-  color: var(--main-text-color);
+  color: var(--special-text-color);
   font-size: calc(10px + 2vmin);
   padding: 0 10px; 
   text-decoration: none;
@@ -47,6 +49,16 @@ html {
   bottom: 5px;
   transform: translate(-50%, -50%);
   margin: 0 auto; 
+}
+
+.heading {
+  padding: 15px;
+  color: var(--title-text-color);
+}
+
+.sub_heading {
+  font-size: calc(10px + 2vmin);
+  color: var(--main-text-color);
 }
 
 @keyframes App-logo-spin {
