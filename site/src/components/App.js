@@ -3,6 +3,8 @@ import logo from './../img/r_logo.png';
 import ugmo_logo from './../img/ugmo_logo.png';
 import skate_logo from './../img/skate_logo.png';
 import './../css/styles.css';
+import './../css/animate.css';
+import './../css/ubuntu.css';
 import Link from './Link.js'
 
 const links_data = [
@@ -18,11 +20,11 @@ class App extends Component {
       <div className="main">
         <header className="main">
           <span>
-          <img src={ugmo_logo} className="sub_logo" alt="logo" />
-          <img src={logo} className="logo" alt="logo" />
-          <img src={skate_logo} className="sub_logo" alt="logo" />
+            <img src={ugmo_logo} className="sub_logo" alt="logo" />
+            <img src={logo} className="logo" alt="logo" />
+            <img src={skate_logo} className="sub_logo" alt="logo" />
           </span>
-          <p>Ryan Lee</p>
+          <p className="animated fadeInDownBig">Ryan Lee</p>
         </header>
         <div className="section">
           {links_data.map(link => (
