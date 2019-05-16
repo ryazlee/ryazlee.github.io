@@ -1,8 +1,8 @@
 :root {
+  --main-bg-color: #5E5E7A;
   --main-text-color: #DCD9CD;
   --title-text-color: #FFFFFF;
   --special-text-color: #9DC183;
-  --main-bg-color: #5E5E7A;
 }
 
 html {
@@ -28,7 +28,7 @@ html {
 
 .sub_logo {
   animation: App-logo-spin infinite 10s linear;
-  height: 20vmin;
+  height: 25vmin;
 }
 
 .link {
