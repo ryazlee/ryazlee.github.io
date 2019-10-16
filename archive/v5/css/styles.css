@@ -10,33 +10,32 @@ html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   font-size: calc(40px + 2vmin);
   font-family: "Ubuntu";
   color: var(--main-text-color);
 }
 
-.inline-emoji {
-  display: inline-block;
-  font-size: calc(20px + 2vmin);
-}
-
 .main {
+  text-align: center;
   padding-bottom: 25px;
-  font-family: 'Cutive Mono', monospace;
-  width: 70%;
-  margin: auto;
 }
 
-.links {
-  font-size: calc(10px + 2vmin);
-  float: left;
-  margin: auto;
+.logo {
+  height: 35vmin;
+}
+
+.sub_logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 25vmin;
 }
 
 .link {
- color: var(--special-text-color);
- text-decoration: none;
+  color: var(--special-text-color);
+  font-size: calc(10px + 2vmin);
+  padding: 0 10px; 
+  text-decoration: none;
 }
 
 .link:hover {
@@ -53,7 +52,7 @@ html {
 }
 
 .heading {
-  padding: 5px 0;
+  padding: 15px;
   color: var(--title-text-color);
 }
 
