@@ -24,14 +24,13 @@ html {
 .main {
   padding-bottom: 25px;
   font-family: 'Cutive Mono', monospace;
-  width: 70%;
+  max-width: 85%;
   margin: auto;
 }
 
-.links {
+.bullets {
   font-size: calc(10px + 2vmin);
   float: left;
-  margin: auto;
 }
 
 .link {
@@ -55,18 +54,4 @@ html {
 .heading {
   padding: 5px 0;
   color: var(--title-text-color);
-}
-
-.sub_heading {
-  font-size: calc(10px + 2vmin);
-  color: var(--main-text-color);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
