@@ -7,12 +7,8 @@
 
 html {
   background-color: var(--main-bg-color);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(40px + 2vmin);
-  font-family: "Ubuntu";
+  font-size: calc(35px + 2vmin);
+  font-family: 'Cutive Mono', monospace;
   color: var(--main-text-color);
 }
 
@@ -23,15 +19,16 @@ html {
 
 .main {
   padding-bottom: 25px;
-  font-family: 'Cutive Mono', monospace;
-  width: 70%;
-  margin: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.links {
+.bullets {
   font-size: calc(10px + 2vmin);
-  float: left;
-  margin: auto;
 }
 
 .link {
@@ -55,18 +52,4 @@ html {
 .heading {
   padding: 5px 0;
   color: var(--title-text-color);
-}
-
-.sub_heading {
-  font-size: calc(10px + 2vmin);
-  color: var(--main-text-color);
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
