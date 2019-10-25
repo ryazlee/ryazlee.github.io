@@ -20,11 +20,6 @@ html {
 .main {
   padding-bottom: 25px;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .bullets {
@@ -52,4 +47,13 @@ html {
 .heading {
   padding: 5px 0;
   color: var(--title-text-color);
+}
+
+.box_center {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
 }
