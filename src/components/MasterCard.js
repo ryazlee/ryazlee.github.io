@@ -1,13 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import { purple } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
   subtext: '#8078b8',
@@ -24,16 +21,15 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-    margin: 'auto',
-    maxWidth: 600, 
+    maxWidth: '90%',
   },
   title: {
-    fontSize: 25,
+    fontSize: '1.5rem',
     color: theme.palette.primary.main,
   },
   subtext: {
     marginBottom: '3%',
-    fontSize: 15,
+    fontSize: '1rem',
     color: theme.subtext,
   },
   center: {
@@ -43,16 +39,13 @@ const useStyles = makeStyles({
     left: '50%',
     transform: 'translate(-50%, -50%)',
   },
-  content: {
-    padding: '5%',
-  },
   body: {
-    fontSize: 15, 
+    fontSize: '.9rem', 
     padding: '3%, 0',
     color: theme.palette.secondary.main,
   },
   footer: {
-    fontSize: 15,
+    fontSize: '.9rem',
     paddingTop: 15,
     color: theme.palette.secondary.main,
   },
@@ -71,8 +64,8 @@ export default function OutlinedCard() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Card className={classes.root + ' ' + classes.center} variant="outlined" raised="true">
-        <CardContent className={classes.content}>
+      <Card className={classes.root + ' ' + classes.center} variant="outlined">
+        <CardContent> 
           <Typography className={classes.title}>
             Ryan Lee 💻 🥏
           </Typography>
