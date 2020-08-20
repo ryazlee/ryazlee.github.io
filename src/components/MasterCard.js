@@ -65,24 +65,24 @@ export default function OutlinedCard() {
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.center}>
-      <Card className={classes.root} variant="outlined">
-        <CardContent> 
-          <Typography className={classes.title}>
-            Ryan Lee 💻 🥏
-          </Typography>
-          <Typography className={classes.subtext}> 
-            SWE Intern @ Apple
-          </Typography>
-          <Typography className={classes.body}>
-            Hi! My name is Ryan and I am currently a software engineering intern at <a class={classes.link} href="https://www.apple.com/">Apple</a> working for the AppleCare Field Diagnostics and Tools team. This past summer, I interned at <a class={classes.link} href="https://www.snap.com/en-US/">Snap Inc</a> where I was a client developer for the Search team.
-            <br/>
-            In my free time I enjoy playing ultimate frisbee for <a class={classes.link} href="https://www.youtube.com/channel/UCKgR8SJmRb23k9WPwN0B-zg">Cal UGMO</a> as well as doing small side projects that you can find on my <a class={classes.link} href="https://github.com/ryazlee">Github</a> :).
-          </Typography>
-          <Typography className={classes.footer}> 
-            Want to learn more about me?  Feel free to check out my <a class={classes.link} href="https://ryazlee.github.io/files/ryan_lee_resume.pdf">resume</a>, connect with me on <a class={classes.link} href="https://www.linkedin.com/in/ryazlee/">LinkedIn</a>, or shoot me an <a class={classes.link} href="mailto:ryanjlee@berkeley.edu">email</a>.  I am happy to connect!
-          </Typography>
-        </CardContent>
-      </Card>
+        <Card className={classes.root} variant="outlined">
+          <CardContent> 
+            <Typography className={classes.title}>
+              Ryan Lee 💻 🥏
+            </Typography>
+            <Typography className={classes.subtext}> 
+              SWE Intern @ Apple
+            </Typography>
+            <Typography className={classes.body}>
+              Hi! My name is Ryan and I am currently a software engineering intern at <a class={classes.link} href="https://www.apple.com/">Apple</a> working for the AppleCare Field Diagnostics and Tools team. This past summer, I interned at <a class={classes.link} href="https://www.snap.com/en-US/">Snap Inc</a> where I was a client developer for the Search team.
+              <br/>
+              In my free time I enjoy playing ultimate frisbee for <a class={classes.link} href="https://www.youtube.com/channel/UCKgR8SJmRb23k9WPwN0B-zg">Cal UGMO</a> as well as doing small side projects that you can find on my <a class={classes.link} href="https://github.com/ryazlee">Github</a> :).
+            </Typography>
+            <Typography className={classes.footer}> 
+              Want to learn more about me?  Feel free to check out my <a class={classes.link} href="https://ryazlee.github.io/files/ryan_lee_resume.pdf">resume</a>, connect with me on <a class={classes.link} href="https://www.linkedin.com/in/ryazlee/">LinkedIn</a>, or shoot me an <a class={classes.link} href="mailto:ryanjlee@berkeley.edu">email</a>.  I am happy to connect!
+            </Typography>
+          </CardContent>
+        </Card>
       </div>
     </ThemeProvider>
   );
