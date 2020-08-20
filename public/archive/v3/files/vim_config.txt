@@ -1,0 +1,20 @@
+set nocompatible
+syntax on
+set mouse=a
+ 
+set hidden
+set wildmenu
+set showcmd
+set hlsearch
+set smartcase
+set backspace=indent,eol,start
+set autoindent
+set nostartofline
+set visualbell
+set cmdheight=2
+set ruler
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set clipboard=unnamed
+
