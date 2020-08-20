@@ -21,10 +21,10 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: '90%',
+    maxWidth: 600,
   },
   title: {
-    fontSize: '1.5rem',
+    fontSize: '1.4rem',
     color: theme.palette.primary.main,
   },
   subtext: {
@@ -33,15 +33,15 @@ const useStyles = makeStyles({
     color: theme.subtext,
   },
   center: {
-    margin: 0,
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    height: '90vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '10rem',
+    padding: '2%',
   },
   body: {
     fontSize: '.9rem', 
-    padding: '3%, 0',
     color: theme.palette.secondary.main,
   },
   footer: {
@@ -64,7 +64,8 @@ export default function OutlinedCard() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Card className={classes.root + ' ' + classes.center} variant="outlined">
+      <div className={classes.center}>
+      <Card className={classes.root} variant="outlined">
         <CardContent> 
           <Typography className={classes.title}>
             Ryan Lee 💻 🥏
@@ -82,6 +83,7 @@ export default function OutlinedCard() {
           </Typography>
         </CardContent>
       </Card>
+      </div>
     </ThemeProvider>
   );
 }
