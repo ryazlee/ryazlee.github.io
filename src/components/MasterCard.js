@@ -8,13 +8,13 @@ import { ThemeProvider } from '@material-ui/styles';
 
 const theme = createMuiTheme({
   subtext: '#8078b8',
-  link: '#329582',
+  link: '#189ad3',
   palette: {
     primary: {
       main: '#5d297c', 
     },
     secondary: {
-      main: '#4860a8',
+      main: '#363b74',
     },
   },
 });
@@ -22,6 +22,7 @@ const theme = createMuiTheme({
 const useStyles = makeStyles({
   root: {
     maxWidth: 600,
+    fontFamily: 'Oxygen'
   },
   title: {
     fontSize: '1.4rem',
@@ -29,8 +30,9 @@ const useStyles = makeStyles({
   },
   subtext: {
     marginBottom: '3%',
-    fontSize: '1rem',
+    fontSize: '.8rem',
     color: theme.subtext,
+    fontFamily: 'Menlo'
   },
   center: {
     height: '90vh',
@@ -54,7 +56,8 @@ const useStyles = makeStyles({
     textDecoration: 'none',
     '&:hover': {
       fontWeight: 'bold',
-    }
+    },
+    fontFamily: 'Menlo'
   },
 });
 
