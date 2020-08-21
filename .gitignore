@@ -6,3 +6,6 @@
 
 # Ignore swp files for vi
 *.swp
+
+# Ignore build
+build/
