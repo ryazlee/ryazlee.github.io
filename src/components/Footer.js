@@ -6,7 +6,7 @@ class Main extends Component {
     render () {
       return (
         <div className="footer">
-            <a className='link' href={connectLinks.resume}>Resume</a>
+            <a className='link' href={connectLinks.resume}>Resume.pdf</a>
         </div>
       );
     }

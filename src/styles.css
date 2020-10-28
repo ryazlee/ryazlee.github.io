@@ -25,7 +25,6 @@ body {
   text-decoration: none;
   color: orange;
   display: inline;
-  text-decoration: none;
   position: relative;
   overflow: hidden;
 }
@@ -49,7 +48,7 @@ body {
   width: 0;
   bottom: -5px;
   background: orange;
-  height: 4px;
+  height: 3px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -74,6 +73,7 @@ body {
   position: relative;
   margin-top: 50px;
   text-align: right;
+  font-size: x-small;
 }
 
 @media screen and (min-width: 480px) {
@@ -83,19 +83,19 @@ body {
     line-height: 35px;
   }
   .footer {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
 @media screen and (min-width: 600px) {
   .landing {
-    max-width: 80%;
+    max-width: 85%;
     font-size: 30px;
     line-height: 40px;
   }
   .footer {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

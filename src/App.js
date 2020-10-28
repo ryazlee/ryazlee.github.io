@@ -10,7 +10,7 @@ function App() {
       <Frame />
       <div className="center">
         <div className="landing">
-          <Main/>
+          <Main />
           <Footer />
         </div>
       </div>
