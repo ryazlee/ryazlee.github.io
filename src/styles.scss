@@ -8,7 +8,6 @@ html {
 }
 
 body {
-  /* background: url(../img/background.png) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,10 +15,6 @@ body {
   margin: auto;
   padding: 15px;
   font-weight: 600;
-}
-
-.landing {
-  margin: 0 auto;
 }
 
 a {
@@ -41,9 +36,6 @@ a {
     margin: auto;
      display: block;
   }
-}
-
-.darkModeToggle {
 }
 
 a:after {
@@ -90,6 +82,15 @@ a:active:after {
       font-size: 15px;
     }
   }
+}
+
+.coloredLine {
+  height: 5px;
+  border-style: none;
+  margin-top: -3px;
+  color: $base-color;
+  background-color: $base-color;
+  border-color: $base-color;
 }
 
 @media screen and (min-width: 100px) {
@@ -141,14 +142,6 @@ a:active:after {
   }
 }
 
-.coloredLine {
-  height: 5px;
-  border-style: none;
-  margin-top: -3px;
-  color: $base-color;
-  background-color: $base-color;
-  border-color: $base-color;
-}
 
 
 

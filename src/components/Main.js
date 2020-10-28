@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../styles.scss'
 import ColoredLine from './ColoredLine';
+import '../styles.scss'
 
 class Main extends Component {
     render () {

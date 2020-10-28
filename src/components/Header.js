@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../styles.scss'
-import { connectLinks } from '../config.js'
 import DarkModeToggle from './DarkModeSupport/DarkModeToggle.js'
+import { connectLinks } from '../config.js'
+import '../styles.scss'
 
 class Main extends Component {
     render () {
