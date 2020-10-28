@@ -24,10 +24,34 @@ body {
 }
 
 .link {
-    padding: 0 10px;
     text-decoration: none;
     color: orange;
+    display: inline;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
+
+.link:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: orange;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .link:hover:after,
+  .link:focus:after,
+  .link:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 
 .center {
     height: 90vh;
@@ -35,6 +59,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2%,
+}
+
+.footer {
+    font-size: 30px; 
+    position: relative;
+    margin-top: 50px;
+    color: blue;
+    text-align: right;
 }
 
 @media (--xs) {

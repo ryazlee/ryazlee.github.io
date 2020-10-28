@@ -1,6 +1,6 @@
 import React from 'react';
-import MasterCard from './components/MasterCard.js';
 import Main from './components/Main.js'
+import Footer from './components/Footer.js'
 import './styles.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="center">
       <div className="landing">
         <Main/>
+        <Footer />
       </div>
     </div>
   );
