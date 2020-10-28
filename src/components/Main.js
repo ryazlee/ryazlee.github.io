@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import '../styles.css'
+import '../styles.scss'
+import ColoredLine from './ColoredLine';
 
 class Main extends Component {
     render () {
       return (
         <div>
+          <ColoredLine color='orange'/>
           I’m Ryan, a San Francisco Bay Area
           based software engineer at&nbsp;
           <a className='link' href="https://snap.com">Snap Inc</a> 👻

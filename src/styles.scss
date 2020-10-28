@@ -31,13 +31,17 @@ body {
 
 .bottomBitmoji {
   position: fixed;
+  display: flex;
+  justify-content: center;
   bottom: 0;
+  img {
+    width: 20%;
+    margin: auto;
+     display: block;
+  }
 }
 
-.bottomBitmoji img {
-  width: 20%;
-  margin: auto;
-  display: block;
+.darkModeToggle {
 }
 
 .link:after {
@@ -99,3 +103,18 @@ body {
     line-height: 30px;
   }
 }
+
+.coloredLine {
+  height: 5px;
+  border-style: none;
+  margin-top: -3px;
+}
+
+.header {
+  position: absolute;
+  li {
+    display: inline-block;
+    margin: 20px;
+  }
+}
+

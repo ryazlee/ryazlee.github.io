@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles.css'
+import '../styles.scss'
 import { connectLinks } from '../config.js'
 
 class Main extends Component {
