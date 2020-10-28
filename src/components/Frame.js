@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles.scss'
-import { connectLinks } from '../config.js'
 import peeking_bitmoji from '../assets/peeking_bitmoji.png'
 
 class Frame extends Component {

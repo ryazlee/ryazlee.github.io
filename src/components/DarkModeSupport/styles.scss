@@ -8,25 +8,12 @@ body.light-mode {
     background-color: #10171d;
     color: #dfdfdf;
   
-    .navbar {
-      background-color: #1b2938;
-    }
-  
     .dark-mode-toggle > button {
       color: #999;
       &:last-child {
         color: lightblue;
       }
     }
-  }
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    background-color: #95d3ff;
-    padding: 20px;
   }
   
   .dark-mode-toggle {

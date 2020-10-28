@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Ubuntu+Mono";
 
+$base-color: #c6538c;
+
 html {
   -webkit-font-smoothing: antialiased;
   font-family: "Helvetica";
@@ -10,9 +12,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
-  padding: 0 50px;
+  
 }
 
 .landing {
@@ -21,9 +23,9 @@ body {
   font-weight: 700;
 }
 
-.link {
+a {
   text-decoration: none;
-  color: orange;
+  color: $base-color; 
   display: inline;
   position: relative;
   overflow: hidden;
@@ -44,22 +46,22 @@ body {
 .darkModeToggle {
 }
 
-.link:after {
+a:after {
   content: "";
   position: absolute;
   z-index: -1;
   right: 0;
   width: 0;
   bottom: -5px;
-  background: orange;
+  background: $base-color;
   height: 3px;
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
-.link:hover:after,
-.link:focus:after,
-.link:active:after {
+a:hover:after,
+a:focus:after,
+a:active:after {
   left: 0;
   right: auto;
   width: 100%;
@@ -108,13 +110,20 @@ body {
   height: 5px;
   border-style: none;
   margin-top: -3px;
+  color: $base-color;
+  background-color: $base-color;
+  border-color: $base-color;
 }
 
 .header {
   position: absolute;
+  right: 0;
   li {
     display: inline-block;
-    margin: 20px;
+    margin: 0 20px;
+    a {
+      font-size: 15px;
+    }
   }
 }
 
