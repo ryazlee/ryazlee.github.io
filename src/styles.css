@@ -1,0 +1,56 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu+Mono';
+
+html { 
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Helvetica';
+}
+
+body {
+  /* background: url(../img/background.png) no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  max-width: 700px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.landing {
+  margin: 0 auto;
+  margin-top: 90px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.link {
+    padding: 0 10px;
+    text-decoration: none;
+    color: orange;
+}
+
+.center {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%,
+}
+
+@media (--xs) {
+  .landing {
+    max-width: 90%;
+  }
+}
+
+@media (--gt-xs) {
+  .landing {
+    max-width: 80%;
+  }
+}
+
+@media (--gt-md) {
+  .landing {
+    max-width: 900px;
+  }
+}
