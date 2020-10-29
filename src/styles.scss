@@ -1,6 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu+Mono";
-
-$base-color: #c6538c;
+$secondary-color: #c6538c;
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -19,11 +17,11 @@ body {
 
 a {
   text-decoration: none;
-  color: $base-color; 
+  color: $secondary-color; 
   display: inline;
   position: relative;
   overflow: hidden;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .bottomBitmoji {
@@ -45,7 +43,7 @@ a:after {
   right: 0;
   width: 0;
   bottom: -5px;
-  background: $base-color;
+  background: $secondary-color;
   height: 3px;
   transition-property: width;
   transition-duration: 0.3s;
@@ -88,9 +86,13 @@ a:active:after {
   height: 5px;
   border-style: none;
   margin-top: -3px;
-  color: $base-color;
-  background-color: $base-color;
-  border-color: $base-color;
+  color: $secondary-color;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.landing {
+  margin-top: 85px;
 }
 
 @media screen and (min-width: 100px) {
