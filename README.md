@@ -13,5 +13,6 @@ v7 was built using react and gh-pages.  I followed the tutorial [here](https://d
 * [v4](https://ryazlee.github.io/archive/v4/)
 * [v5](https://ryazlee.github.io/archive/v5/)
 * [v6](https://ryazlee.github.io/archive/v6/)
+* [v7](https://ryazlee.github.io/archive/v7/)
 * [current](https://ryazlee.github.io/)
 
