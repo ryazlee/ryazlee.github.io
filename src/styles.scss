@@ -25,11 +25,10 @@ a {
 }
 
 .bottomBitmoji {
-  position: absolute;
-  display: flex;
-  bottom: 0;
+  position: fixed;
+  bottom: -2px;
   img {
-    width: 80px;
+    width: 90px;
     margin: auto;
   }
 }
@@ -83,7 +82,6 @@ a:active:after {
 .coloredLine {
   height: 5px;
   border-style: none;
-  margin-top: -3px;
   color: $secondary-color;
   background-color: $secondary-color;
   border-color: $secondary-color;
