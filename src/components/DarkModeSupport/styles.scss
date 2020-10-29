@@ -7,7 +7,7 @@ body.light-mode {
   body.dark-mode {
     background-color: #10171d;
     color: #dfdfdf;
-  
+    transition: background-color 0.3s ease;
     .dark-mode-toggle > button {
       color: #999;
       &:last-child {
@@ -75,6 +75,6 @@ body.light-mode {
       left: 2px;
       background: #fff;
       opacity: 0.9;
-      background-color: #f6f6f6;
+      background-color: lightgray;
     }
   }

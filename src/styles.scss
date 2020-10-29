@@ -24,15 +24,6 @@ a {
   font-weight: 600;
 }
 
-.bottomBitmoji {
-  position: fixed;
-  bottom: -2px;
-  img {
-    width: 90px;
-    margin: auto;
-  }
-}
-
 a:after {
   content: "";
   position: absolute;
@@ -46,12 +37,22 @@ a:after {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
+
 a:hover:after,
 a:focus:after,
 a:active:after {
   left: 0;
   right: auto;
   width: 100%;
+}
+
+.bottomBitmoji {
+  position: fixed;
+  bottom: -2px;
+  img {
+    width: 90px;
+    margin: auto;
+  }
 }
 
 .center {
