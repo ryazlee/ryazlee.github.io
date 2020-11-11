@@ -9,19 +9,18 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  padding: 15px;
+  margin: 5px;
 }
 
 .scroller {
-    height: 95vh;
+    height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;
     scrollbar-width: none;
   section {
     scroll-snap-align: start;
-    height: 96vh;
-    padding: 5px 0;
+    height: 100vh;
   }
 }
 
