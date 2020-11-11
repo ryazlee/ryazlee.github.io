@@ -11,11 +11,18 @@ function App() {
     <div>
       <Frame />
       <Header />
-      <div className="center">
-        <div className="landing">
-          <Main />
-          <Footer />
-        </div>
+      <div className="scroller">
+        <section>
+          <div className="center">
+            <div className="landing">
+              <Main />
+              <Footer />
+            </div>
+          </div>
+        </section>
+        <section>
+          hisdfkjsfkasdkjfjklasdflkj
+        </section>
       </div>
     </div>
   );
