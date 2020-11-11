@@ -4,6 +4,7 @@ import Footer from './components/Footer.js'
 import Frame from './components/Frame.js'
 import Header from './components/Header.js'
 import './styles.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

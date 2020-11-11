@@ -9,14 +9,11 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  max-width: 800px;
-  margin: auto;
   padding: 15px;
-  font-weight: 600;
 }
 
-a {
-  text-decoration: none;
+.link {
+  text-decoration: none !important;
   color: $secondary-color; 
   display: inline;
   position: relative;
@@ -24,7 +21,8 @@ a {
   font-weight: 600;
 }
 
-a:after {
+.link:after {
+  text-decoration: none !important;
   content: "";
   position: absolute;
   z-index: -1;
@@ -38,20 +36,29 @@ a:after {
   transition-timing-function: ease-out;
 }
 
-a:hover:after,
-a:focus:after,
-a:active:after {
+.link:hover {
+  text-decoration: none !important;
+  color: $secondary-color;
+}
+
+.link:hover:after,
+.link:focus:after,
+.link:active:after {
   left: 0;
   right: auto;
   width: 100%;
 }
 
+.main {
+  max-width: 800px;
+  text-align: justify;
+}
+
 .bottomBitmoji {
   position: fixed;
-  bottom: -2px;
+  bottom: 0;
   img {
     width: 90px;
-    margin: auto;
   }
 }
 

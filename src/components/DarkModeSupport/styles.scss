@@ -9,10 +9,7 @@ body.light-mode {
     color: #dfdfdf;
     transition: background-color 0.3s ease;
     .dark-mode-toggle > button {
-      color: #999;
-      &:last-child {
-        color: lightblue;
-      }
+      color: lightblue;
     }
   }
   
@@ -20,15 +17,11 @@ body.light-mode {
     display: flex;
     margin: 0 auto;
     & > button {
-      font-size: 1.2em;
+      font-size: 1.3em;
       background: none;
       border: none;
-      color: orange;
       cursor: pointer;
       transition: color 0.3s ease;
-      &:last-child {
-        color: #666;
-      }
   
       &:focus {
         outline: none;
@@ -38,7 +31,6 @@ body.light-mode {
   
   .toggle-control {
     position: relative;
-    padding: 0 4px;
     display: flex;
     align-items: center;
   }

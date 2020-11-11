@@ -7,9 +7,9 @@ class Main extends Component {
     render () {
       return (
         <ul className='header'>
-          <li><a href={connectLinks.linkedIn}>LinkedIn</a></li>
-          <li><a href={connectLinks.github}>Github</a></li>
-          <li><a href={connectLinks.email}>Email</a></li>
+          <li><a className='link' href={connectLinks.linkedIn}>LinkedIn</a></li>
+          <li><a className='link' href={connectLinks.github}>Github</a></li>
+          <li><a className='link' href={connectLinks.email}>Email</a></li>
           <li><DarkModeToggle /></li>
         </ul>
       );
