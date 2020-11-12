@@ -20,7 +20,7 @@ body {
     scrollbar-width: none;
   section {
     scroll-snap-align: start;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -94,6 +94,7 @@ body {
 .header {
   position: absolute;
   right: 0;
+  top: 5px;
   li {
     display: inline-block;
     margin: 0 20px;
