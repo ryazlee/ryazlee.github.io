@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ColoredLine from './ColoredLine';
+import {connectLinks} from '../config.js'
 
 class Main extends Component {
     render () {
@@ -11,8 +12,9 @@ class Main extends Component {
           <a className="link" href="https://snap.com">Snap Inc</a> 👻
           <br /> 
           <br />
-          In my free time I enjoy learning more about the software engineering 
-          world and working on smaller side projects :)
+          In my free time I enjoy staying active and learning more about 
+          the software engineering world :).  Feel free to check out some of my side projects on my&nbsp; 
+          <a className="link" href={connectLinks.github}>GitHub</a>!
         </div>
       );
     }
