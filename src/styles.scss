@@ -3,6 +3,7 @@ $secondary-color: #895ea7;
 html {
   -webkit-font-smoothing: antialiased;
   font-family: "Helvetica";
+  min-height: -webkit-fill-available;
 }
 
 body {
@@ -13,8 +14,10 @@ body {
 }
 
 .screen {
-  min-height: 100vh;
   padding: 0 20px;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 .scroller::-webkit-scrollbar {
