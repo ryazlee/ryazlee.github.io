@@ -6,7 +6,8 @@ class Main extends Component {
     render () {
       return (
         <div>
-          <Card border="primary" className='custom-card' style={{ width: '20rem', float: 'left', margin: '15px' }}>
+          <h2>Projects</h2>
+          <Card border="primary" className='custom-card'>
             <Card.Header>SpOnGeBoB MeMeR</Card.Header>
             <Card.Img src="https://lh3.googleusercontent.com/JgeAij8xnDkQ6FZHPIbxHnJsMw37LCfGRC_ZQnlsJGkkte0u5PbzkTONx7mU0RVUIYHdgsuL=w128-h128-e365-rj-sc0x00ffffff" style={{width: "10rem", margin: "auto", padding: "5%"}}></Card.Img>
             <Card.Body>
@@ -17,7 +18,7 @@ class Main extends Component {
             </Card.Body>
           </Card>
 
-          <Card border="primary" className='custom-card' style={{ width: '20rem', float: 'left', margin: '15px' }}> 
+          <Card border="primary" className='custom-card'> 
             <Card.Header>Cal Men's Ultimate Website</Card.Header>
             <Card.Img src="https://pbs.twimg.com/profile_images/1299777038589374464/PbcGTnzE_400x400.jpg" style={{width: "10rem", margin: "auto", padding: "5%"}}></Card.Img>
             <Card.Body>

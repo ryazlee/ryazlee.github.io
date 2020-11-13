@@ -12,23 +12,21 @@ function App() {
     <div>
       <Frame />
       <Header />
-      <div className="scroller">
-        <section>
-          <div className="center">
-            <div className="landing">
-              <Main />
-              <Footer />
-            </div>
+      <div className="screen">
+        <div className="center">
+          <div className="landing">
+            <Main />
+            <Footer />
           </div>
-        </section>
-        {/* WIP....
-        <section>
-          <div className='center'>
-            <Projects />
-          </div>
-        </section>
-        */}
+        </div>
       </div>
+      {/*
+      <div className='screen'>
+        <div className="center">
+          <Projects />
+        </div>
+      </div>
+      */}
     </div>
   );
 }
