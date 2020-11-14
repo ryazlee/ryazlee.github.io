@@ -10,11 +10,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  margin: 5px;
 }
 
 .screen {
-  padding: 0 20px;
   min-height: 100vh;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
