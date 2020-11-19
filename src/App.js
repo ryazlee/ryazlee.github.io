@@ -1,4 +1,5 @@
 import React from 'react';
+import { use100vh } from 'react-div-100vh'
 import Main from './components/Main.js'
 import Footer from './components/Footer.js'
 import Frame from './components/Frame.js'
@@ -13,7 +14,7 @@ function App() {
       <Frame />
       <Header />
       <div className="screen">
-        <div className="center">
+        <div className="center" style={{ minHeight: use100vh() }}>
           <div className="landing">
             <Main />
             <Footer />
