@@ -136,17 +136,17 @@ body {
 @media screen and (min-width: 480px) {
   .landing {
     max-width: 90%;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 23px;
+    line-height: 37px;
   }
   .footer {
-    font-size: 20px;
+    font-size: 17px;
   }
   .header {
     li {
-      margin: 0 15px;
+      margin: 0 12px;
       a {
-        font-size: 20px;
+        font-size: 17px;
       }
     }
   }
@@ -157,6 +157,7 @@ body {
     max-width: 85%;
     font-size: 30px;
     line-height: 45px;
+    background-color: blue;
   }
   .footer {
     font-size: 20px;

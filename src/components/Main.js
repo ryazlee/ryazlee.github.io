@@ -13,7 +13,7 @@ class Main extends Component {
           <br /> 
           <br />
           In my free time I enjoy staying active and learning more about 
-          the software engineering world :).  Feel free to check out some of my side projects on my&nbsp; 
+          the software engineering world.  Feel free to check out some of my side projects on my&nbsp; 
           <a className="link" href={connectLinks.github}>GitHub</a>!
         </div>
       );
