@@ -21,13 +21,6 @@ function App() {
           </div>
         </div>
       </div>
-      {/*
-      <div className='screen'>
-        <div className="center">
-          <Projects />
-        </div>
-      </div>
-      */}
     </div>
   );
 }
