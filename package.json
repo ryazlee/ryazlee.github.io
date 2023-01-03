@@ -17,7 +17,7 @@
     "react-dom": "^16.13.1",
     "react-native-expo-viewport-units": "0.0.8",
     "react-native-viewport-units": "0.0.5",
-    "react-scripts": "3.4.3",
+    "react-scripts": "5.0.1",
     "use-dark-mode": "^2.3.1"
   },
   "scripts": {
