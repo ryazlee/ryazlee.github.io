@@ -5,7 +5,7 @@ import './styles.scss'
 
 const DarkModeToggle = () => {
   const darkMode = useDarkMode(false);
-  
+
   function getButton() {
     if (darkMode.value) {
       return <button type="button" onClick={darkMode.disable}>🌞</button>
