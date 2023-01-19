@@ -7,10 +7,10 @@ class Main extends Component {
     return (
       <div className='main'>
         <ColoredLine />
-        hello👋! i'm ryan, a san francisco based software engineer at&nbsp;
+        hello 👋! i'm ryan, a san francisco based software engineer at&nbsp;
         <a className="link" href="https://aurora.tech/">aurora</a>.
         i specialize in mobile and web app front end development where i reguarly code with react,
-        objective-c, and kotlin.
+        typescript, and objective-c/kotlin.
         <br />
         <br />
         in my free time, i enjoy staying active and learning more about
