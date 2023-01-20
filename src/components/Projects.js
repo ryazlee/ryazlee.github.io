@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles.scss'
 import { Card } from 'react-bootstrap'
 
-class Main extends Component {
+class Projects extends Component {
   render() {
     return (
       <div>
@@ -33,4 +33,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default Projects;
