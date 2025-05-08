@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import peeking_bitmoji from '../assets/peeking_bitmoji.png'
-import '../styles.scss'
+import peeking_bitmoji from '../../assets/peeking_bitmoji.png'
+import '../../styles.scss'
 
 class Frame extends Component {
   render() {

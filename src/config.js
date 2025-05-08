@@ -3,5 +3,5 @@ export const connectLinks = {
     github: 'https://github.com/ryazlee',
     resume: 'https://ryazlee.github.io/files/ryan_lee_resume.pdf',
     linkedIn: 'https://www.linkedin.com/in/ryazlee/',
-    email: 'mailto:ryanjlee@berkeley.edu'
+    email: 'mailto:ryan.j.lee99@gmail.com'
 };
