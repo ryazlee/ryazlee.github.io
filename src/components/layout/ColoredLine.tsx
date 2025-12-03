@@ -1,6 +1,7 @@
 import React from "react";
-import "./../../styles.scss";
 
-const ColoredLine: React.FC = () => <hr className="coloredLine" />;
+const ColoredLine: React.FC = () => (
+	<hr className="h-[5px] border-none bg-primary my-4" />
+);
 
 export default ColoredLine;

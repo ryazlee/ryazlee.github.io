@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+	html {
+		-webkit-font-smoothing: antialiased;
+		font-family: "Helvetica", Arial, sans-serif;
+		min-height: -webkit-fill-available;
+	}
+
+	body {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+
+	/* Dark mode styles */
+	body.light-mode {
+		background-color: #fff;
+		color: #333;
+		transition: background-color 0.3s ease;
+	}
+
+	body.dark-mode {
+		background-color: #10171d;
+		color: #dfdfdf;
+		transition: background-color 0.3s ease;
+	}
+
+	body.dark-mode .project-card,
+	body.dark-mode .bg-white {
+		background-color: #18232c !important;
+		border-color: #202e3a !important;
+	}
+
+	body.dark-mode .text-gray-800,
+	body.dark-mode .text-gray-900 {
+		color: #dfdfdf !important;
+	}
+
+	body.dark-mode .text-gray-600 {
+		color: #a0a0a0 !important;
+	}
+}
+
+/* Custom component styles */
+@layer components {
+	.link {
+		@apply relative inline overflow-hidden font-medium text-primary no-underline;
+		@apply after:content-[''] after:absolute after:z-[-1] after:right-0 after:w-0 after:bottom-[-5px];
+		@apply after:bg-primary after:h-[3px] after:transition-[width] after:duration-300 after:ease-out;
+	}
+
+	.link:hover,
+	.link:focus,
+	.link:active {
+		@apply no-underline text-primary;
+		@apply after:left-0 after:right-auto after:w-full;
+	}
+}

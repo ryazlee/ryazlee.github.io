@@ -1,33 +1,44 @@
 import React, { Component } from "react";
 import DarkModeToggle from "../DarkModeSupport/DarkModeToggle";
 import { connectLinks } from "../../config";
-import "../../styles.scss";
 
 class Header extends Component {
 	render() {
 		return (
-			<ul className="header">
-				<li>
-					<a className="link" href={connectLinks.resume}>
+			<ul className="absolute right-0 top-2.5">
+				<li className="inline-block mx-1.5 md:mx-3">
+					<a
+						className="link text-xs md:text-base"
+						href={connectLinks.resume}
+					>
 						Resume
 					</a>
 				</li>
-				<li>
-					<a className="link" href={connectLinks.linkedIn}>
+				<li className="inline-block mx-1.5 md:mx-3">
+					<a
+						className="link text-xs md:text-base"
+						href={connectLinks.linkedIn}
+					>
 						LinkedIn
 					</a>
 				</li>
-				<li>
-					<a className="link" href={connectLinks.github}>
+				<li className="inline-block mx-1.5 md:mx-3">
+					<a
+						className="link text-xs md:text-base"
+						href={connectLinks.github}
+					>
 						Github
 					</a>
 				</li>
-				<li>
-					<a className="link" href={connectLinks.email}>
+				<li className="inline-block mx-1.5 md:mx-3">
+					<a
+						className="link text-xs md:text-base"
+						href={connectLinks.email}
+					>
 						Email
 					</a>
 				</li>
-				<li>
+				<li className="inline-block mx-1.5 md:mx-3">
 					<DarkModeToggle />
 				</li>
 			</ul>

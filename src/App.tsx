@@ -1,30 +1,36 @@
 import React from "react";
 import { use100vh } from "react-div-100vh";
-import Main from "./components/Main";
+import { Main } from "./components/Main";
 import Frame from "./components/layout/Frame";
 import Header from "./components/layout/Header";
-import "./styles.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+import { Projects } from "./components/Projects";
 
-function App() {
+const Section: React.FC<{
+	children: React.ReactNode;
+	height: number | null;
+}> = ({ children, height }) => (
+	<section
+		className="min-h-screen flex items-center justify-center"
+		style={{ minHeight: height ?? "100vh" }}
+	>
+		{children}
+	</section>
+);
+
+export const App: React.FC = () => {
 	const height = use100vh();
 
 	return (
 		<div>
 			<Frame />
 			<Header />
-			<div className="screen">
-				<div
-					className="center"
-					style={{ minHeight: height ?? "100vh" }}
-				>
-					<div className="landing">
-						<Main />
-					</div>
-				</div>
-			</div>
+			<Section height={height}>
+				<Main />
+			</Section>
+			<Section height={height}>
+				<Projects />
+			</Section>
 		</div>
 	);
-}
-
-export default App;
+};

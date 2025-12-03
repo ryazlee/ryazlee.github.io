@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { connectLinks } from "../../config";
-import "../../styles.scss";
 
 class Footer extends Component {
 	render() {
 		return (
-			<div className="footer">
+			<div className="relative mt-12 text-right text-xs md:text-base">
 				<a className="link" href={connectLinks.resume}>
 					Resume.pdf
 				</a>

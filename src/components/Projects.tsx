@@ -1,59 +1,97 @@
-import React, { Component } from "react";
-import "../styles.scss";
-import { Card } from "react-bootstrap";
+import React from "react";
 
-class Projects extends Component {
-	render() {
-		return (
-			<div>
-				<h2>Projects</h2>
-				<Card border="primary" className="custom-card">
-					<Card.Header>SpOnGeBoB MeMeR</Card.Header>
-					<Card.Img
-						src="https://lh3.googleusercontent.com/JgeAij8xnDkQ6FZHPIbxHnJsMw37LCfGRC_ZQnlsJGkkte0u5PbzkTONx7mU0RVUIYHdgsuL=w128-h128-e365-rj-sc0x00ffffff"
-						style={{
-							width: "10rem",
-							margin: "auto",
-							padding: "5%",
-						}}
-					></Card.Img>
-					<Card.Body>
-						<Card.Text>
-							Small chrome extension that allows you to use the
-							SpOnGeBoB MeMe with your friends!
-						</Card.Text>
-						<Card.Link href="https://github.com/ryazlee/spongebob_memer">
-							Github Link
-						</Card.Link>
-					</Card.Body>
-				</Card>
+type ProjectData = {
+	title: string;
+	imageSrc?: string;
+	link?: string;
+	description: string;
+	githubLink: string;
+	dateAdded?: string;
+};
 
-				<Card border="primary" className="custom-card">
-					<Card.Header>Cal Men's Ultimate Website</Card.Header>
-					<Card.Img
-						src="https://pbs.twimg.com/profile_images/1299777038589374464/PbcGTnzE_400x400.jpg"
-						style={{
-							width: "10rem",
-							margin: "auto",
-							padding: "5%",
-						}}
-					></Card.Img>
-					<Card.Body>
-						<Card.Text>
-							Current maintainer and developer of{" "}
-							<a href="http://calmensultimate.org/">
-								http://calmensultimate.org/
+const projects: ProjectData[] = [
+	{
+		title: "SpOnGeBoB MeMeR",
+		link: "https://chromewebstore.google.com/detail/hoiklbooldephjininjimnolbkklmflc",
+		description:
+			"Small chrome extension that allows you to use the SpOnGeBoB MeMe with your friends!",
+		githubLink: "https://github.com/ryazlee/spongebob_memer",
+		dateAdded: "11-19-19",
+	},
+	{
+		title: "yearify",
+		description:
+			"Simple webapp that connects to you google calendar and shows you how you spent your year!",
+		githubLink: "https://github.com/ryazlee/yearify",
+		link: "https://yearify.org/",
+		dateAdded: "12-28-24",
+	},
+	{
+		title: "Ride Mates",
+		description:
+			"An app that connects people who want to carpool to similar locations.",
+		githubLink: "https://github.com/ryazlee/ride-mates",
+		link: "https://www.ridemates.org/",
+		dateAdded: "01-15-25",
+	},
+	{
+		title: "Contacts Heatmap",
+		description:
+			"Visualizes your Google Contacts on a heatmap based on their phone area code.",
+		githubLink: "https://github.com/ryazlee/contacts-heatmap",
+		link: "https://ryazlee.github.io/contacts-heatmap/",
+		dateAdded: "12-01-25",
+	},
+];
+
+export const Projects: React.FC = () => {
+	return (
+		<div className="max-w-4xl w-full px-6">
+			<h1 className="text-4xl mb-8 text-center">Personal Projects</h1>
+			{projects.map((project) => (
+				<div
+					key={project.title}
+					className="bg-white rounded-lg p-6 mb-6 shadow hover:shadow-lg transition-shadow"
+				>
+					<h2 className="text-2xl mb-3">
+						{project.link ? (
+							<a
+								className="link"
+								href={project.link}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{project.title}
 							</a>
-							. Contact me if there are any bugs...
-						</Card.Text>
-						<Card.Link href="https://github.com/ryazlee/spongebob_memer">
-							Github Link
-						</Card.Link>
-					</Card.Body>
-				</Card>
-			</div>
-		);
-	}
-}
-
-export default Projects;
+						) : (
+							project.title
+						)}
+					</h2>
+					{project.imageSrc && (
+						<img
+							src={project.imageSrc}
+							alt={project.title}
+							className="max-w-[200px] rounded my-3"
+						/>
+					)}
+					<p className="text-gray-600 mb-3">{project.description}</p>
+					<div className="flex items-center gap-2 text-sm">
+						<a
+							className="link"
+							href={project.githubLink}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							GitHub
+						</a>
+						{project.dateAdded && (
+							<span className="text-gray-500">
+								• {project.dateAdded}
+							</span>
+						)}
+					</div>
+				</div>
+			))}
+		</div>
+	);
+};
