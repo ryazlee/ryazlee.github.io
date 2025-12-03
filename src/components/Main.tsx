@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ColoredLine from "./layout/ColoredLine.js";
-import { connectLinks } from "../config.js";
+import ColoredLine from "./layout/ColoredLine";
+import { connectLinks } from "../config";
 
 class Main extends Component {
 	render() {
