@@ -7,7 +7,7 @@ module.exports = {
 				primary: "#187de9",
 			},
 			fontFamily: {
-				sans: ["Helvetica", "Arial", "sans-serif"],
+				sans: ["'IBM Plex Sans'", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
 			},
 		},
 	},

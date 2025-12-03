@@ -28,9 +28,9 @@ export const App: React.FC = () => {
 			<Section height={height}>
 				<Main />
 			</Section>
-			<Section height={height}>
+			{/* <Section height={height}>
 				<Projects />
-			</Section>
+			</Section> */}
 		</div>
 	);
 };
