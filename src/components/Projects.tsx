@@ -1,5 +1,6 @@
 import React from "react";
 import { GitHubRepo, LINK_OVERRIDES, PROJECTS, useProjectQueries } from "hooks/useProjectQueries";
+import { Link } from "components/Link";
 
 const LANG_COLORS: Record<string, string> = {
 	TypeScript: "#3178c6",
@@ -19,33 +20,20 @@ const LANG_COLORS: Record<string, string> = {
 	Dart: "#00B4AB",
 };
 
-function formatRelativeTime(iso: string): string {
-	const diff = Date.now() - new Date(iso).getTime();
-	const mins = Math.floor(diff / 60000);
-	if (mins < 60) return `${mins}m ago`;
-	const hrs = Math.floor(mins / 60);
-	if (hrs < 24) return `${hrs}h ago`;
-	const days = Math.floor(hrs / 24);
-	if (days < 30) return `${days}d ago`;
-	const months = Math.floor(days / 30);
-	if (months < 12) return `${months}mo ago`;
-	return `${Math.floor(months / 12)}y ago`;
-}
-
 const ProjectRow: React.FC<{ repo: GitHubRepo }> = ({ repo }) => {
 	const href = LINK_OVERRIDES[repo.name] ?? repo.homepage ?? repo.html_url;
 
 	return (
 		<div className="py-3 border-t border-black/10 dark:border-white/10">
 			<div className="flex items-baseline justify-between gap-3">
-				<a
+				<Link
 					href={href}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="link font-medium text-sm"
+					className="text-sm"
 				>
 					{repo.name}
-				</a>
+				</Link>
 				<div className="flex items-center gap-2 shrink-0">
 					<a
 						href={href}
@@ -76,7 +64,7 @@ const ProjectRow: React.FC<{ repo: GitHubRepo }> = ({ repo }) => {
 			{repo.description && (
 				<p className="mt-0.5 text-xs opacity-50 leading-snug">{repo.description}</p>
 			)}
-			<div className="flex items-center gap-2.5 mt-1 text-[11px] opacity-40">
+			<div className="flex items-center flex-wrap gap-2.5 mt-1 text-[11px] opacity-40">
 				{repo.language && (
 					<span className="flex items-center gap-1">
 						<span
@@ -92,20 +80,15 @@ const ProjectRow: React.FC<{ repo: GitHubRepo }> = ({ repo }) => {
 				{repo.forks_count > 0 && (
 					<span>⑂ {repo.forks_count}</span>
 				)}
-				<span>updated {formatRelativeTime(repo.pushed_at)}</span>
+				{repo.topics.length > 0 && repo.topics.map((topic) => (
+					<span
+						key={topic}
+						className="text-[10px] px-1.5 py-0.5 rounded-full border border-black/15 dark:border-white/15"
+					>
+						{topic}
+					</span>
+				))}
 			</div>
-			{repo.topics.length > 0 && (
-				<div className="flex flex-wrap gap-1 mt-1.5">
-					{repo.topics.map((topic) => (
-						<span
-							key={topic}
-							className="text-[10px] px-1.5 py-0.5 rounded-full border border-black/15 dark:border-white/15 opacity-60"
-						>
-							{topic}
-						</span>
-					))}
-				</div>
-			)}
 		</div>
 	);
 };
