@@ -10,5 +10,6 @@ const LINK_CLASSES = [
 ].join(" ");
 
 export const Link: React.FC<React.AnchorHTMLAttributes<HTMLAnchorElement>> = ({ className, ...props }) => (
+  // eslint-disable-next-line jsx-a11y/anchor-has-content
   <a className={`${LINK_CLASSES}${className ? ` ${className}` : ""}`} {...props} />
 );

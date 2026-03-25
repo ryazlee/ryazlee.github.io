@@ -1,7 +1,7 @@
 import React from "react";
-import Tooltip from "@material-ui/core/Tooltip";
 import { useColorMode } from "context/ColorModeContext";
 import { connectLinks } from "config";
+import { iconButton } from "styles";
 
 const NAV_ICONS = [
 	{
@@ -49,26 +49,33 @@ const Header: React.FC = () => {
 		<nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-end px-6 py-4">
 			<div className="flex items-center gap-4">
 				{NAV_ICONS.map(({ label, href, icon }) => (
-					<Tooltip key={label} title={label} placement="bottom" arrow>
+					<div key={label} className="relative group">
 						<a
 							href={href}
 							target={label !== "Email" ? "_blank" : undefined}
 							rel={label !== "Email" ? "noopener noreferrer" : undefined}
-							className="opacity-40 hover:opacity-90 transition-opacity no-underline"
+							className={`${iconButton} no-underline block`}
+							aria-label={label}
 						>
 							{icon}
 						</a>
-					</Tooltip>
+						<span className="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded text-[11px] whitespace-nowrap bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-none">
+							{label}
+						</span>
+					</div>
 				))}
-				<Tooltip title={isDark ? "Light mode" : "Dark mode"} placement="bottom" arrow>
+				<div className="relative group">
 					<button
 						onClick={toggle}
-						className="text-base opacity-50 hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-none leading-none"
+						className="text-base hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-none leading-none"
 						aria-label="Toggle dark mode"
 					>
 						{isDark ? "☀️" : "🌑"}
 					</button>
-				</Tooltip>
+					<span className="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded text-[11px] whitespace-nowrap bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-none">
+						{isDark ? "Light mode" : "Dark mode"}
+					</span>
+				</div>
 			</div>
 		</nav>
 	);

@@ -1,6 +1,7 @@
 import React from "react";
 import { GitHubRepo, LINK_OVERRIDES, PROJECTS, useProjectQueries } from "hooks/useProjectQueries";
 import { Link } from "components/Link";
+import { iconButton } from "styles";
 
 const LANG_COLORS: Record<string, string> = {
 	TypeScript: "#3178c6",
@@ -39,7 +40,7 @@ const ProjectRow: React.FC<{ repo: GitHubRepo }> = ({ repo }) => {
 						href={href}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="opacity-25 hover:opacity-70 transition-opacity"
+						className={iconButton}
 						title="Open project"
 					>
 						<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,7 +53,7 @@ const ProjectRow: React.FC<{ repo: GitHubRepo }> = ({ repo }) => {
 						href={repo.html_url}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="opacity-25 hover:opacity-70 transition-opacity"
+						className={iconButton}
 						title="GitHub"
 					>
 						<svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">

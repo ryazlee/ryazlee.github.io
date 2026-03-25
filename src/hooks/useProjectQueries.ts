@@ -46,7 +46,7 @@ export const useProjectQueries = () => {
 	});
 	return {
 		results,
-		isLoading: results.some((r) => r.isLoading),
+		isLoading: results.some((r) => r.isPending),
 		allFailed: results.every((r) => r.isError),
 	};
 };

@@ -1,30 +1,19 @@
 import React from "react";
 import { use100vh } from "react-div-100vh";
-import { ThemeProvider, createTheme } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import { Main } from "components/Main";
 import { Projects } from "components/Projects";
 import { useProjectQueries } from "hooks/useProjectQueries";
 import Frame from "components/layout/Frame";
 import Header from "components/layout/Header";
-import { ColorModeProvider, useColorMode } from "context/ColorModeContext";
+import { ColorModeProvider } from "context/ColorModeContext";
 import "index.css";
 
 const ThemedApp: React.FC = () => {
 	const height = use100vh();
-	const { isDark } = useColorMode();
 	const { allFailed } = useProjectQueries();
 
-	const theme = createTheme({
-		palette: {
-			type: isDark ? "dark" : "light",
-			background: { default: isDark ? "#111" : "#fff" },
-		},
-	});
-
 	return (
-		<ThemeProvider theme={theme}>
-			<CssBaseline />
+		<>
 			<Frame />
 			<Header />
 			<section
@@ -58,7 +47,7 @@ const ThemedApp: React.FC = () => {
 					</div>
 				</section>
 			)}
-		</ThemeProvider>
+		</>
 	);
 };
 
