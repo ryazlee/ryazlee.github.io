@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/archive/v8/static/css/main.a7251884.css",
+    "main.js": "/archive/v8/static/js/main.68513224.js",
+    "static/media/peeking_bitmoji.png": "/archive/v8/static/media/peeking_bitmoji.304e538ecd94ecb1300a.png",
+    "index.html": "/archive/v8/index.html",
+    "main.a7251884.css.map": "/archive/v8/static/css/main.a7251884.css.map",
+    "main.68513224.js.map": "/archive/v8/static/js/main.68513224.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7251884.css",
+    "static/js/main.68513224.js"
+  ]
+}

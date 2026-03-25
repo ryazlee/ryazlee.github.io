@@ -1,18 +1,10 @@
-import React, { Component } from "react";
-import peeking_bitmoji from "../../assets/peeking_bitmoji.png";
+import React from "react";
+import peekingBitmoji from "assets/peeking_bitmoji.png";
 
-class Frame extends Component {
-	render() {
-		return (
-			<div className="fixed bottom-0">
-				<img
-					src={peeking_bitmoji}
-					alt="Peeking Bitmoji"
-					className="w-[90px]"
-				></img>
-			</div>
-		);
-	}
-}
+const Frame: React.FC = () => (
+	<div className="fixed bottom-0">
+		<img src={peekingBitmoji} alt="Peeking Bitmoji" className="w-[90px]" />
+	</div>
+);
 
 export default Frame;
