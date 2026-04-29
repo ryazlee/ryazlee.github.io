@@ -16,6 +16,7 @@ export type GitHubRepo = {
 export const PROJECTS = [
 	"ryazlee/lombard-party",
 	"ryazlee/poker-session-manager",
+  "https://ryazlee.github.io/payment-splitter",
 	"ryazlee/yearify",
 	"ryazlee/ride-mates",
 	"ryazlee/contacts-heatmap",
