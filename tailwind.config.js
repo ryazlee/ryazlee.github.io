@@ -4,10 +4,18 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#42D674",
+				primary: "var(--primary)",
+				bg: "var(--bg)",
+				fg: "var(--fg)",
+				muted: "var(--fg-muted)",
+				faint: "var(--fg-faint)",
+				line: "var(--line)",
 			},
 			fontFamily: {
-				sans: ["'IBM Plex Sans'", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+				sans: ["'Instrument Sans'", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+			},
+			maxWidth: {
+				prose: "52rem",
 			},
 		},
 	},

@@ -8,8 +8,11 @@ const NAV_ICONS = [
 		label: "Resume",
 		href: connectLinks.resume,
 		icon: (
-			<svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-				<path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+				<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+				<polyline points="14 2 14 8 20 8" />
+				<line x1="8" y1="13" x2="16" y2="13" />
+				<line x1="8" y1="17" x2="16" y2="17" />
 			</svg>
 		),
 	},
@@ -35,8 +38,9 @@ const NAV_ICONS = [
 		label: "Email",
 		href: connectLinks.email,
 		icon: (
-			<svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-				<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+				<rect x="2" y="4" width="20" height="16" rx="2" />
+				<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
 			</svg>
 		),
 	},
@@ -46,8 +50,8 @@ const Header: React.FC = () => {
 	const { isDark, toggle } = useColorMode();
 
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-end px-6 py-4">
-			<div className="flex items-center gap-4">
+		<nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-end px-6 py-5 animate-fade-in">
+			<div className="flex items-center gap-3.5">
 				{NAV_ICONS.map(({ label, href, icon }) => (
 					<div key={label} className="relative group">
 						<a
@@ -59,21 +63,30 @@ const Header: React.FC = () => {
 						>
 							{icon}
 						</a>
-						<span className="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded text-[11px] whitespace-nowrap bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-none">
+						<span className="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2 py-1 text-[10px] tracking-wide whitespace-nowrap bg-fg text-bg opacity-0 group-hover:opacity-100 transition-opacity duration-150">
 							{label}
 						</span>
 					</div>
 				))}
-				<div className="relative group">
+				<div className="relative group ml-0.5">
 					<button
 						onClick={toggle}
-						className="text-base hover:opacity-100 transition-opacity cursor-pointer bg-transparent border-none leading-none"
+						className={`${iconButton} cursor-pointer bg-transparent border-none p-0 flex items-center`}
 						aria-label="Toggle dark mode"
 					>
-						{isDark ? "☀️" : "🌑"}
+						{isDark ? (
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+								<circle cx="12" cy="12" r="4" />
+								<path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+							</svg>
+						) : (
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+								<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+							</svg>
+						)}
 					</button>
-					<span className="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded text-[11px] whitespace-nowrap bg-black/80 text-white opacity-0 group-hover:opacity-100 transition-none">
-						{isDark ? "Light mode" : "Dark mode"}
+					<span className="pointer-events-none absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2 py-1 text-[10px] tracking-wide whitespace-nowrap bg-fg text-bg opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+						{isDark ? "Light" : "Dark"}
 					</span>
 				</div>
 			</div>
@@ -82,4 +95,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
