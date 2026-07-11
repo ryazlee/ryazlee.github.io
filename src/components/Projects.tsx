@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Project, projectIconUrl, projects } from "data/projects";
+import { Project, projectConfigs, projectIconUrl } from "data/projects";
+import { useProjects } from "hooks/useProjects";
 import { Link } from "components/Link";
 
 const ProjectIcon: React.FC<{ project: Project }> = ({ project }) => {
@@ -27,8 +28,6 @@ const ProjectIcon: React.FC<{ project: Project }> = ({ project }) => {
 };
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
-	const links = project.links ?? [];
-
 	return (
 		<article
 			className="flex flex-col w-full h-full rounded-xl border border-line p-5 transition-colors duration-200 hover:border-fg/20"
@@ -48,9 +47,9 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 			<p className="mt-2 text-[0.8rem] text-muted leading-snug">
 				{project.description}
 			</p>
-			{links.length > 0 && (
+			{project.links.length > 0 && (
 				<div className="flex items-center flex-wrap gap-x-3 gap-y-1.5 mt-auto pt-3 text-[11px] text-faint">
-					{links.map((link) => (
+					{project.links.map((link) => (
 						<a
 							key={`${link.label}-${link.href}`}
 							href={link.href}
@@ -67,16 +66,36 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 	);
 };
 
+const ProjectSkeleton: React.FC = () => (
+	<article
+		className="flex flex-col w-full h-full rounded-xl border border-line p-5"
+		style={{ background: "var(--surface)" }}
+	>
+		<div className="flex items-center gap-2">
+			<span className="w-6 h-6 rounded-md bg-fg/10 animate-pulse" />
+			<span className="h-3 w-28 rounded-sm bg-fg/10 animate-pulse" />
+		</div>
+		<span className="mt-3 h-3 w-full rounded-sm bg-fg/10 animate-pulse" />
+		<span className="mt-2 h-3 w-2/3 rounded-sm bg-fg/10 animate-pulse" />
+	</article>
+);
+
 export const Projects: React.FC = () => {
+	const { projects, isLoading } = useProjects();
+
 	return (
 		<div className="animate-fade-up">
 			<h2 className="text-[10px] font-medium uppercase tracking-[0.2em] text-faint mb-4">
 				Projects
 			</h2>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 w-full">
-				{projects.map((project) => (
-					<ProjectCard key={project.id} project={project} />
-				))}
+				{isLoading
+					? projectConfigs.map((config) => (
+						<ProjectSkeleton key={config.id} />
+					))
+					: projects.map((project) => (
+						<ProjectCard key={project.id} project={project} />
+					))}
 			</div>
 		</div>
 	);

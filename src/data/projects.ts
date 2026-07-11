@@ -3,21 +3,81 @@ export type ProjectLink = {
 	href: string;
 };
 
+/** Local config only — live name/description/links come from GitHub. */
+export type ProjectConfig = {
+	id: string;
+	/** `owner/repo` for the GitHub API */
+	repo: string;
+	/** Optional display name (defaults to repo name) */
+	name?: string;
+	/** Override GitHub homepage when it's missing or wrong */
+	homepage?: string;
+	/** Extra links (App Store, etc.) shown alongside Website / GitHub */
+	extraLinks?: ProjectLink[];
+	/** Optional icon URL. Defaults to the site favicon for the primary URL. */
+	icon?: string;
+};
+
 export type Project = {
 	id: string;
 	name: string;
 	description: string;
-	language?: string;
-	/** Primary destination (title click) */
 	href: string;
-	/** Optional icon URL. Defaults to the site favicon for `href`. */
 	icon?: string;
-	/** Extra destinations shown under the title (website, App Store, GitHub, …) */
-	links?: ProjectLink[];
+	links: ProjectLink[];
 };
 
-/** Favicon for a project — explicit override, else Google’s favicon service. */
-export const projectIconUrl = (project: Project, size = 64): string => {
+/**
+ * Project list for the site. Edit this file to add/reorder/update projects.
+ * Order here is display order. Descriptions and default links are fetched from GitHub.
+ */
+export const projectConfigs: ProjectConfig[] = [
+	{
+		id: "slumber",
+		repo: "ryazlee/slumber-web",
+		name: "slumber",
+		extraLinks: [
+			{ label: "App Store", href: "https://apps.apple.com/app/id6772449516" },
+		],
+	},
+	{
+		id: "lombard-party",
+		repo: "ryazlee/lombard-party",
+	},
+	{
+		id: "whos-with-who",
+		repo: "ryazlee/whos-with-who",
+	},
+	{
+		id: "payment-splitter",
+		repo: "ryazlee/payment-splitter",
+		homepage: "https://ryazlee.github.io/payment-splitter/",
+	},
+	{
+		id: "poker-session-manager",
+		repo: "ryazlee/poker-session-manager",
+	},
+	{
+		id: "ride-mates",
+		repo: "ryazlee/ride-mates",
+		homepage: "https://www.ridemates.org/",
+	},
+	{
+		id: "yearify",
+		repo: "ryazlee/yearify",
+		homepage: "https://yearify.org/",
+	},
+	{
+		id: "contacts-heatmap",
+		repo: "ryazlee/contacts-heatmap",
+	},
+	{
+		id: "ff-player-tracker",
+		repo: "ryazlee/ff-player-tracker",
+	},
+];
+
+export const projectIconUrl = (project: Pick<Project, "href" | "icon">, size = 64): string => {
 	if (project.icon) return project.icon;
 	try {
 		const host = new URL(project.href).hostname;
@@ -27,99 +87,41 @@ export const projectIconUrl = (project: Project, size = 64): string => {
 	}
 };
 
-/**
- * Project list for the site. Edit this file to add/reorder/update projects.
- * Order here is display order.
- */
-export const projects: Project[] = [
-	{
-		id: "slumber",
-		name: "slumber",
-		description: "Social sleep tracking for you and your friends.",
-		href: "https://useslumber.com/home",
-		links: [
-			{ label: "Website", href: "https://useslumber.com/home" },
-			{ label: "App Store", href: "https://apps.apple.com/app/id6772449516" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/slumber-web" },
-		],
-	},
-	{
-		id: "lombard-party",
-		name: "lombard-party",
-		description: "Homesite for the Lombard household.",
-		href: "https://ryazlee.github.io/lombard-party/",
-		links: [
-			{ label: "Website", href: "https://ryazlee.github.io/lombard-party/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/lombard-party" },
-		],
-	},
-	{
-		id: "whos-with-who",
-		name: "whos-with-who",
-		description: "A smol game to guess partnerships in a friend group.",
-		href: "https://github.com/ryazlee/whos-with-who",
-		links: [
-			{ label: "GitHub", href: "https://github.com/ryazlee/whos-with-who" },
-		],
-	},
-	{
-		id: "payment-splitter",
-		name: "payment-splitter",
-		description: "A simple webapp to help you split the bill.",
-		href: "https://ryazlee.github.io/payment-splitter/",
-		links: [
-			{ label: "Website", href: "https://ryazlee.github.io/payment-splitter/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/payment-splitter" },
-		],
-	},
-	{
-		id: "poker-session-manager",
-		name: "poker-session-manager",
-		description: "Manage your poker sessions.",
-		href: "https://ryazlee.github.io/poker-session-manager/",
-		links: [
-			{ label: "Website", href: "https://ryazlee.github.io/poker-session-manager/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/poker-session-manager" },
-		],
-	},
-	{
-		id: "ride-mates",
-		name: "ride-mates",
-		description: "Find fellow ride mates for your next trip.",
-		href: "https://www.ridemates.org/",
-		links: [
-			{ label: "Website", href: "https://www.ridemates.org/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/ride-mates" },
-		],
-	},
-	{
-		id: "yearify",
-		name: "yearify",
-		description: "Turn the year into something you can look back on.",
-		href: "https://yearify.org/",
-		links: [
-			{ label: "Website", href: "https://yearify.org/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/yearify" },
-		],
-	},
-	{
-		id: "contacts-heatmap",
-		name: "contacts-heatmap",
-		description: "Heatmap of where your Google contacts are from.",
-		href: "https://ryazlee.github.io/contacts-heatmap/",
-		links: [
-			{ label: "Website", href: "https://ryazlee.github.io/contacts-heatmap/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/contacts-heatmap" },
-		],
-	},
-	{
-		id: "ff-player-tracker",
-		name: "ff-player-tracker",
-		description: "Fantasy football news for the players you care about.",
-		href: "https://ryazlee.github.io/ff-player-tracker/",
-		links: [
-			{ label: "Website", href: "https://ryazlee.github.io/ff-player-tracker/" },
-			{ label: "GitHub", href: "https://github.com/ryazlee/ff-player-tracker" },
-		],
-	},
-];
+type GitHubRepo = {
+	name: string;
+	description: string | null;
+	html_url: string;
+	homepage: string | null;
+};
+
+export const fetchGitHubRepo = (repo: string): Promise<GitHubRepo> =>
+	fetch(`https://api.github.com/repos/${repo}`, {
+		headers: { Accept: "application/vnd.github+json" },
+	}).then((r) => {
+		if (!r.ok) throw new Error(`GitHub API error for ${repo}`);
+		return r.json();
+	});
+
+/** Merge local config with a GitHub repo payload into a display Project. */
+export const mergeProject = (config: ProjectConfig, repo: GitHubRepo): Project => {
+	const site =
+		config.homepage?.trim() ||
+		repo.homepage?.trim() ||
+		null;
+	const github = repo.html_url;
+	const href = site || github;
+
+	const links: ProjectLink[] = [];
+	if (site) links.push({ label: "Website", href: site });
+	if (config.extraLinks) links.push(...config.extraLinks);
+	links.push({ label: "GitHub", href: github });
+
+	return {
+		id: config.id,
+		name: config.name ?? repo.name,
+		description: repo.description?.trim() || "No description yet.",
+		href,
+		icon: config.icon,
+		links,
+	};
+};
