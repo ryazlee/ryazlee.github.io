@@ -1,11 +1,21 @@
-import React, { useState } from "react";
-import { Project, projectConfigs, projectIconUrl } from "data/projects";
+import React, { useEffect, useMemo, useState } from "react";
+import { Project, projectConfigs, projectIconCandidates } from "data/projects";
 import { useProjects } from "hooks/useProjects";
 import { Link } from "components/Link";
 
 const ProjectIcon: React.FC<{ project: Project }> = ({ project }) => {
-	const [failed, setFailed] = useState(false);
-	if (failed) {
+	const candidates = useMemo(
+		() => projectIconCandidates(project),
+		[project.href, project.icon]
+	);
+	const [index, setIndex] = useState(0);
+
+	// Reset if the project's primary URL / icon override changes.
+	useEffect(() => {
+		setIndex(0);
+	}, [project.href, project.icon]);
+
+	if (index >= candidates.length) {
 		return (
 			<span
 				aria-hidden
@@ -13,15 +23,17 @@ const ProjectIcon: React.FC<{ project: Project }> = ({ project }) => {
 			/>
 		);
 	}
+
 	return (
 		<img
-			src={projectIconUrl(project)}
+			key={candidates[index]}
+			src={candidates[index]}
 			alt=""
 			width={24}
 			height={24}
 			loading="lazy"
 			decoding="async"
-			onError={() => setFailed(true)}
+			onError={() => setIndex((i) => i + 1)}
 			className="w-6 h-6 rounded-md object-contain shrink-0 inline-block align-middle bg-fg/5"
 		/>
 	);

@@ -82,15 +82,59 @@ export const projectConfigs: ProjectConfig[] = [
 	},
 ];
 
-export const projectIconUrl = (project: Pick<Project, "href" | "icon">, size = 64): string => {
-	if (project.icon) return project.icon;
+/**
+ * Candidate icon URLs for a project.
+ * Uses the project site path (so github.io/subpage gets that app's favicon,
+ * not the root ryazlee.github.io icon).
+ */
+export const projectIconCandidates = (
+	project: Pick<Project, "href" | "icon">,
+	size = 64
+): string[] => {
+	if (project.icon) return [project.icon];
+
+	const candidates: string[] = [];
 	try {
-		const host = new URL(project.href).hostname;
-		return `https://www.google.com/s2/favicons?domain=${host}&sz=${size}`;
+		const url = new URL(project.href);
+		const isGitHubRepoPage =
+			url.hostname === "github.com" || url.hostname === "www.github.com";
+
+		if (!isGitHubRepoPage) {
+			const base = `${url.origin}${url.pathname.replace(/\/$/, "")}`;
+			// Path-scoped icons first (github.io/project/favicon.*)
+			candidates.push(
+				`${base}/favicon.ico`,
+				`${base}/favicon.png`,
+				`${base}/favicon.svg`,
+				`${base}/apple-touch-icon.png`
+			);
+			// Root fallback for apex sites (yearify.org/favicon.ico)
+			if (url.pathname.replace(/\/$/, "")) {
+				candidates.push(
+					`${url.origin}/favicon.ico`,
+					`${url.origin}/favicon.png`,
+					`${url.origin}/favicon.svg`
+				);
+			}
+		}
+
+		candidates.push(
+			`https://www.google.com/s2/favicons?domain=${url.hostname}&sz=${size}`
+		);
 	} catch {
-		return `https://www.google.com/s2/favicons?domain=github.com&sz=${size}`;
+		candidates.push(
+			`https://www.google.com/s2/favicons?domain=github.com&sz=${size}`
+		);
 	}
+
+	return [...new Set(candidates)];
 };
+
+/** @deprecated Prefer projectIconCandidates — kept for simple single-URL use. */
+export const projectIconUrl = (
+	project: Pick<Project, "href" | "icon">,
+	size = 64
+): string => projectIconCandidates(project, size)[0];
 
 type GitHubRepo = {
 	name: string;
