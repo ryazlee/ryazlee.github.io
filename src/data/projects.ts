@@ -127,7 +127,7 @@ export const projectIconCandidates = (
 		);
 	}
 
-	return [...new Set(candidates)];
+	return Array.from(new Set(candidates));
 };
 
 /** @deprecated Prefer projectIconCandidates — kept for simple single-URL use. */
