@@ -41,6 +41,11 @@ export const projectConfigs: ProjectConfig[] = [
 		],
 	},
 	{
+		id: "callout",
+		repo: "ryazlee/callout",
+		homepage: "https://ryazlee.github.io/callout/",
+	},
+	{
 		id: "lombard-party",
 		repo: "ryazlee/lombard-party",
 	},
