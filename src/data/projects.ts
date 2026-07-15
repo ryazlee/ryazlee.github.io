@@ -65,7 +65,6 @@ export const projectConfigs: ProjectConfig[] = [
 	{
 		id: "ride-mates",
 		repo: "ryazlee/ride-mates",
-		homepage: "https://www.ridemates.org/",
 	},
 	{
 		id: "yearify",
