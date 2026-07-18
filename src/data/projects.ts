@@ -39,12 +39,8 @@ export const projectConfigs: ProjectConfig[] = [
 		],
 	},
 	{
-		id: "callout",
-		repo: "ryazlee/callout",
-	},
-	{
-		id: "lombard-party",
-		repo: "ryazlee/lombard-party",
+		id: "yearify",
+		repo: "ryazlee/yearify",
 	},
 	{
 		id: "whos-with-who",
@@ -55,16 +51,20 @@ export const projectConfigs: ProjectConfig[] = [
 		repo: "ryazlee/payment-splitter",
 	},
 	{
+		id: "callout",
+		repo: "ryazlee/callout",
+	},
+	{
+		id: "lombard-party",
+		repo: "ryazlee/lombard-party",
+	},
+	{
 		id: "poker-session-manager",
 		repo: "ryazlee/poker-session-manager",
 	},
 	{
 		id: "ride-mates",
 		repo: "ryazlee/ride-mates",
-	},
-	{
-		id: "yearify",
-		repo: "ryazlee/yearify",
 	},
 	{
 		id: "contacts-heatmap",
