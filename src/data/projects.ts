@@ -10,8 +10,6 @@ export type ProjectConfig = {
 	repo: string;
 	/** Optional display name (defaults to repo name) */
 	name?: string;
-	/** Override GitHub homepage when it's missing or wrong */
-	homepage?: string;
 	/** Extra links (App Store, etc.) shown alongside Website / GitHub */
 	extraLinks?: ProjectLink[];
 	/** Optional icon URL. Defaults to the site favicon for the primary URL. */
@@ -43,7 +41,6 @@ export const projectConfigs: ProjectConfig[] = [
 	{
 		id: "callout",
 		repo: "ryazlee/callout",
-		homepage: "https://ryazlee.github.io/callout/",
 	},
 	{
 		id: "lombard-party",
@@ -56,7 +53,6 @@ export const projectConfigs: ProjectConfig[] = [
 	{
 		id: "payment-splitter",
 		repo: "ryazlee/payment-splitter",
-		homepage: "https://ryazlee.github.io/payment-splitter/",
 	},
 	{
 		id: "poker-session-manager",
@@ -69,7 +65,6 @@ export const projectConfigs: ProjectConfig[] = [
 	{
 		id: "yearify",
 		repo: "ryazlee/yearify",
-		homepage: "https://yearify.org/",
 	},
 	{
 		id: "contacts-heatmap",
@@ -152,10 +147,7 @@ export const fetchGitHubRepo = (repo: string): Promise<GitHubRepo> =>
 
 /** Merge local config with a GitHub repo payload into a display Project. */
 export const mergeProject = (config: ProjectConfig, repo: GitHubRepo): Project => {
-	const site =
-		config.homepage?.trim() ||
-		repo.homepage?.trim() ||
-		null;
+	const site = repo.homepage?.trim() || null;
 	const github = repo.html_url;
 	const href = site || github;
 
