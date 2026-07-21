@@ -12,7 +12,8 @@ module.exports = {
 				line: "var(--line)",
 			},
 			fontFamily: {
-				sans: ["'Instrument Sans'", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+				sans: ["'Fraunces'", "Georgia", "'Times New Roman'", "serif"],
+				serif: ["'Fraunces'", "Georgia", "'Times New Roman'", "serif"],
 			},
 			maxWidth: {
 				prose: "52rem",
