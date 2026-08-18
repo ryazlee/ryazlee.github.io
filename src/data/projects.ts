@@ -39,6 +39,14 @@ export const projectConfigs: ProjectConfig[] = [
 		],
 	},
 	{
+		id: "plannr",
+		repo: "ryazlee/plannr",
+	},
+	{
+		id: "mobile-scoreboard",
+		repo: "ryazlee/mobile-scoreboard",
+	},
+	{
 		id: "yearify",
 		repo: "ryazlee/yearify",
 	},
