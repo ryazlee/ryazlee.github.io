@@ -2,12 +2,11 @@
 
 Just a place for me to practice my web development!
 
-v7 and v8 was built using react and gh-pages.  I followed the tutorial [here](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f).  
+The current site is Vite + React 19 + Tailwind 4, deployed with GitHub Actions.
 
-Here are some useful commands for developing:
-* `yarn run start` for starting the local server
+Useful commands:
+* `npm run dev` for the local server
 * Push to `main` to deploy (GitHub Actions → GitHub Pages)
-* `yarn run deploy` still works as a manual fallback via the `gh-pages` branch
 
 ### Past versions:
 * [v1](https://ryazlee.github.io/archive/v1/)
@@ -17,5 +16,5 @@ Here are some useful commands for developing:
 * [v5](https://ryazlee.github.io/archive/v5/)
 * [v6](https://ryazlee.github.io/archive/v6/)
 * [v7](https://ryazlee.github.io/archive/v7/)
+* [v8](https://ryazlee.github.io/archive/v8/)
 * [current](https://ryazlee.github.io/)
-

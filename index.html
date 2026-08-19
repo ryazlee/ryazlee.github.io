@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="Ryan Lee — software engineer in San Francisco." />
+    <meta name="google-site-verification" content="tWnMVazQifLr9I-uIWsSSt0P2W7hJ8ngXofE1Ab6mNY" />
+    <meta name="google-adsense-account" content="ca-pub-1573765795245660" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,SOFT,wght@0,9..144,50,400;0,9..144,50,500;0,9..144,50,600;0,9..144,50,700;1,9..144,50,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ryan Lee</title>
+  </head>
+  <body>
+    <script>
+      try {
+        var stored = localStorage.getItem('darkMode')
+        var dark = stored === null ? true : stored === 'true'
+        document.body.classList.add(dark ? 'dark-mode' : 'light-mode')
+        var meta = document.querySelector('meta[name="theme-color"]')
+        if (meta) meta.setAttribute('content', dark ? '#111111' : '#f6f5f2')
+      } catch (e) {}
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
