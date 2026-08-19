@@ -91,22 +91,28 @@ function ProjectSkeleton() {
 }
 
 export function Projects() {
-  const { projects, isLoading } = useProjects()
+  const { projects, isLoading, isRateLimited } = useProjects()
 
   return (
     <div className="animate-fade-up">
       <h2 className="text-[10px] font-medium uppercase tracking-[0.2em] text-faint mb-4">
         Projects
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 w-full">
-        {isLoading
-          ? projectConfigs.map((config) => (
-              <ProjectSkeleton key={config.id} />
-            ))
-          : projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-      </div>
+      {isRateLimited && projects.length === 0 ? (
+        <p className="text-[0.95rem] text-muted leading-relaxed">
+          dang it, got rate limited, try again in a little!
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 w-full">
+          {isLoading
+            ? projectConfigs.map((config) => (
+                <ProjectSkeleton key={config.id} />
+              ))
+            : projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+        </div>
+      )}
     </div>
   )
 }

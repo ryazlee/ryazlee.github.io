@@ -1,6 +1,7 @@
 import { useQueries } from '@tanstack/react-query'
 import {
   fetchGitHubRepo,
+  GitHubRateLimitError,
   mergeProject,
   projectConfigs,
   type Project,
@@ -12,7 +13,8 @@ export function useProjects() {
       queryKey: ['repo', config.repo],
       queryFn: () => fetchGitHubRepo(config.repo),
       staleTime: 1000 * 60 * 10,
-      retry: 1,
+      retry: (failureCount: number, error: unknown) =>
+        error instanceof GitHubRateLimitError ? false : failureCount < 1,
     })),
   })
 
@@ -24,6 +26,9 @@ export function useProjects() {
   return {
     projects,
     isLoading: results.some((r) => r.isPending),
+    isRateLimited: results.some(
+      (r) => r.error instanceof GitHubRateLimitError,
+    ),
     allFailed: results.length > 0 && results.every((r) => r.isError),
   }
 }

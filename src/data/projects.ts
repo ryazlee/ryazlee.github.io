@@ -137,10 +137,21 @@ type GitHubRepo = {
   homepage: string | null
 }
 
+export class GitHubRateLimitError extends Error {
+  constructor() {
+    super('GitHub API rate limited')
+    this.name = 'GitHubRateLimitError'
+  }
+}
+
+const isRateLimitResponse = (response: Response): boolean =>
+  response.status === 403 || response.status === 429
+
 export const fetchGitHubRepo = (repo: string): Promise<GitHubRepo> =>
   fetch(`https://api.github.com/repos/${repo}`, {
     headers: { Accept: 'application/vnd.github+json' },
   }).then((r) => {
+    if (isRateLimitResponse(r)) throw new GitHubRateLimitError()
     if (!r.ok) throw new Error(`GitHub API error for ${repo}`)
     return r.json()
   })
