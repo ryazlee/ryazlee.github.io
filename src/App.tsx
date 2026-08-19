@@ -36,7 +36,9 @@ function Shell() {
         className="pointer-events-none fixed inset-0 -z-10"
         style={{
           background: `
-            radial-gradient(ellipse 90% 55% at 50% -15%, var(--inset), transparent 65%),
+            radial-gradient(ellipse 90% 55% at 50% -15%, var(--bg-accent), transparent 65%),
+            radial-gradient(ellipse 50% 45% at 100% 100%, var(--primary-soft), transparent 50%),
+            radial-gradient(ellipse 40% 35% at 0% 80%, var(--primary-soft), transparent 45%),
             var(--bg)
           `,
         }}
