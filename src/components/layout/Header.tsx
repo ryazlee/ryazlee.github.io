@@ -71,7 +71,7 @@ export default function Header() {
           <button
             onClick={toggle}
             className={`${iconButton} cursor-pointer bg-transparent border-none p-0 flex items-center`}
-            aria-label="Toggle dark mode"
+            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {isDark ? (
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
