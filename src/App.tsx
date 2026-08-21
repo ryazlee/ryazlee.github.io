@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import Frame from '@/components/layout/Frame'
 import Header from '@/components/layout/Header'
-import MakerCredit from '@/components/MakerCredit'
 import ContactScreen from '@/components/screens/ContactScreen'
 import HomeScreen from '@/components/screens/HomeScreen'
 import { ColorModeProvider } from '@/context/ColorModeContext'
@@ -50,9 +49,6 @@ function Shell() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/contact" element={<ContactScreen />} />
       </Routes>
-      <footer className="app-footer">
-        <MakerCredit />
-      </footer>
     </div>
   )
 }

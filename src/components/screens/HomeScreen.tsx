@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Main } from '@/components/Main'
+import MakerCredit from '@/components/MakerCredit'
 import { Projects } from '@/components/Projects'
 
 export default function HomeScreen() {
@@ -91,6 +92,9 @@ export default function HomeScreen() {
         <div className="max-w-prose w-full px-6 py-20">
           <Projects />
         </div>
+        <footer className="app-footer">
+          <MakerCredit />
+        </footer>
       </section>
     </>
   )
