@@ -39,6 +39,16 @@ export const projectConfigs: ProjectConfig[] = [
     ],
   },
   {
+    id: 'pickr',
+    repo: 'ryazlee/pickr',
+    name: 'pickr',
+  },
+  {
+    id: 'transit-hub',
+    repo: 'ryazlee/transit-hub',
+    name: 'transit hub',
+  },
+  {
     id: 'plannr',
     repo: 'ryazlee/plannr',
   },
