@@ -39,6 +39,22 @@ export const projectConfigs: ProjectConfig[] = [
     ],
   },
   {
+    id: 'yearify',
+    repo: 'ryazlee/yearify',
+  },
+  {
+    id: 'payment-splitter',
+    repo: 'ryazlee/payment-splitter',
+  },
+  {
+    id: 'fantasy-hub',
+    repo: 'ryazlee/fantasy-hub',
+  },
+  {
+    id: 'poker-session-manager',
+    repo: 'ryazlee/poker-session-manager',
+  },
+  {
     id: 'pickr',
     repo: 'ryazlee/pickr',
     name: 'pickr',
@@ -57,16 +73,8 @@ export const projectConfigs: ProjectConfig[] = [
     repo: 'ryazlee/mobile-scoreboard',
   },
   {
-    id: 'yearify',
-    repo: 'ryazlee/yearify',
-  },
-  {
     id: 'whos-with-who',
     repo: 'ryazlee/whos-with-who',
-  },
-  {
-    id: 'payment-splitter',
-    repo: 'ryazlee/payment-splitter',
   },
   {
     id: 'callout',
@@ -77,20 +85,12 @@ export const projectConfigs: ProjectConfig[] = [
     repo: 'ryazlee/lombard-party',
   },
   {
-    id: 'poker-session-manager',
-    repo: 'ryazlee/poker-session-manager',
-  },
-  {
     id: 'ride-mates',
     repo: 'ryazlee/ride-mates',
   },
   {
     id: 'contacts-heatmap',
     repo: 'ryazlee/contacts-heatmap',
-  },
-  {
-    id: 'ff-player-tracker',
-    repo: 'ryazlee/ff-player-tracker',
   },
 ]
 
